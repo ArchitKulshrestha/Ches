@@ -35,7 +35,7 @@ function Home() {
 
             <motion.div className="mt-[5rem]">
               <Link className="pt-10" to="/eureka">
-                Vist Eureka
+                Visit Eureka
               </Link>
             </motion.div>
           </motion.div>
