@@ -4,6 +4,14 @@ export default {
   theme: {
     extend: {
       backgroundClip: ["hover", "focus"],
+      screens: {
+        about_width: { min: "600px", max: "1390px" },
+        about_width_mobile: { max: "600px" },
+        about_width_font: { max: "460px" },
+        about_width_logo: { min: "640px", max: "1140px" },
+        about_width_logo_mobile: { min: "450px", max: "640px" },
+        about_width_logo_mobile_small: { max: "450px" },
+      },
       colors: {
         text: {
           50: "#f7ebfa",

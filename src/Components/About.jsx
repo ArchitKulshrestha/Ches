@@ -1,81 +1,52 @@
-/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/jsx-key */
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { motion } from "framer-motion";
-import { SectionWrapper } from "../hoc";
+// import { motion } from "framer-motion";
+// import Tilt from "react-parallax-tilt";
+// import { fadeIn, textVariant } from "../utils/motion";
 
-import Tilt from "react-parallax-tilt";
-import { styles } from "../styles";
-
-import { fadeIn, textVariant } from "../utils/motion";
 function About() {
   const slides = [
     {
-      name: "AIChE",
-      content:
-        "AIChE is the world's leading organization for chemical engineering professionals, with more than 60,000 members from more than 110 countries. AIChE has the breadth of resources and expertise you need whether you are in core process industries or emerging areas, such as translational medicine.",
+      name: `SVNIT`,
+      img: `/src/assets/svnit-logo.png`,
+      content: `Sardar Vallabhbhai National Institute of Technology (SVNIT) is a public technical university located in Surat, Gujarat, India. It was established in 1961 as one of the Regional Engineering Colleges (RECs) and was later declared a "Deemed University" under the University Grants Commission Act, of 1956. In 2007, it was granted the status of an "Institute of National Importance." SVNIT offers undergraduate courses in Civil, Mechanical, Electrical, Electronics, Computer, Production, and Chemical Engineering undergraduate programs. It also provides postgraduate programs, M.Sc. programs, and a doctoral program in various branches of engineering.`,
     },
     {
-      name: "ChES",
-      content:
-        "The Chemical Engineering Society was instituted on 16th January 2014. Affiliated to the American Institute of Chemical Engineers (AIChE), ChES aims to spread knowledge and experience to the future chemical engineers about chemical engineering education and its applications. The faction provides a platform for the chemical engineering community of SVNIT where they can discuss, plan, execute and debug their problems among their peers.",
+      name: `AIChE`,
+      img: `/src/assets/aiche_logo.png`,
+      content: `AIChE (American Institute of Chemical Engineers) is a professional organization dedicated to advancing the field of chemical engineering. It provides resources, networking opportunities, and professional development for its members, imbibing innovation and knowledge exchange.`,
     },
     {
-      name: "Mission",
-      content:
-        "● Promote excellence in chemical engineering education and practise. ● Advance the development and exchange of relevant knowledge and ideas. ● Facilitate public understanding of technical issues. ● Integrate the upliftment of society by providing awareness about different technical situations. ● Anticipate, recognise and evaluate hazardous conditions and practises affecting people, property and the environment, develop and evaluate appropriate strategies for the same.",
+      name: `ChES`,
+      img: `/src/assets/ches-logo.png`,
+      content: `The Chemical Engineering Society (ChES) at SVNIT, founded on January 16, 2014, and affiliated with AIChE, promotes knowledge sharing and collaboration among future chemical engineers. It organizes events, seminars, and workshops to foster curiosity and understanding in Chemical Engineering.`,
     },
     {
-      name: "Vision",
-      content:
-        "To contribute in building an integrated and uplifted society by providing awareness about different technical scenarios. Events and seminars conducted by ChES focus on both building the public understanding of technical issues and the individual curiosity of the enthusiast.",
+      name: `Mission`,
+      img: `/src/assets/ches-logo.png`,
+      content: `ChES is dedicated to simplifying technical complexities for public understanding, promoting excellence in chemical engineering, and encouraging the exchange of ideas. We actively contribute to societal progress by sharing knowledge on diverse technical issues, empowering individuals to make informed decisions. Through a comprehensive approach, ChES seeks to bridge the gap between the technical realm and the broader community, playing a pivotal role in advancing both awareness and solutions in the field of chemical engineering.`,
+    },
+    {
+      name: `Vision`,
+      img: `/src/assets/ches-logo.png`,
+      content: `ChES envisions becoming a catalyst for excellence in chemical engineering at SVNIT by promoting a united community. Our vision is to dedicate ourselves to advancing knowledge, sharing experiences, and collectively addressing technical challenges. We aim to promote a culture of open dialogue, effective problem-solving, and active community engagement. Crucially, we strive to ensure that the impact of chemical engineering extends beyond academia, addressing real-world challenges and contributing positively to global progress.`,
     },
   ];
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 750,
-    slidesoShow: 1,
-    slidesToScroll: 1,
-  };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  // };
 
   return (
-    <motion.div variants={fadeIn("right", "tween", 0.2, 1)} className="w-full">
-      <div className="relative w-full">
-        <h1 className={styles.sectionHeadText}>About.</h1>
-      </div>
-
-      <div className="w-[90%] sm:w-[78%] ml-[6px]  mt-8">
-        <Tilt
-          tiltMaxAngleX={1}
-          scale={1.01}
-          tiltMaxAngleY={1}
-          transitionSpeed={1550}>
-          <div>
-            <Slider {...settings}>
-              {slides.map((s) => (
-                <div className="bg-background-900/70 rounded-3xl h-[30rem] md:h-[24rem]  ">
-                  <motion.p
-                    variants={textVariant(0.75)}
-                    className={`text-text-100 font-semibold md:text-[50px] sm:text-[45px]  text-[25px] px-4 sm:px-8 pt-8`}>
-                    {s.name}
-                  </motion.p>
-
-                  <motion.p
-                    variants={textVariant(1)}
-                    className="sm:text-[18px] text-[14px] text-text-100 tracking-wider  px-4 sm:px-8 pt-5 ">
-                    {s.content}
-                  </motion.p>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </Tilt>
-      </div>
-    </motion.div>
+    <div>
+      <h1>About</h1>
+    </div>
   );
 }
 
-export default SectionWrapper(About, "About");
+export default About;
