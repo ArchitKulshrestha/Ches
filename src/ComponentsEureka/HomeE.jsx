@@ -17,7 +17,7 @@ function HomeE() {
           <motion.div
             className="mt-[5rem]"
             variants={fadeIn("right", "spring", 0.75, 0.75)}>
-            <h1 className=" text-text-100 font-bold md:text-[75px] sm:text-[60px] text-[55px] font-OpenSans">
+            <h1 className=" text-text-200 font-bold md:text-[75px] sm:text-[60px] text-[55px] font-OpenSans">
               Eureka{" "}
             </h1>
             <ul>

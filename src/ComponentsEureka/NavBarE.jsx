@@ -43,9 +43,9 @@ function NavBar() {
             {localStorage.getItem("token") ? (
               <Link to="/eureka">
                 <button
-                  className="bg-secondary-600 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800"
+                  className="border-2 border-secondary-700 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800"
                   onClick={handleSignOut}>
-                  SignOut{" "}
+                  LogOut{" "}
                 </button>
               </Link>
             ) : (

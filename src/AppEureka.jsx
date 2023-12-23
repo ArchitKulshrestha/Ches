@@ -1,16 +1,12 @@
 import { HomeE, NavBarE } from "./ComponentsEureka";
-import { useState } from "react";
-import DisplayContent from "./ComponentsEureka/DisplayContent";
-import Upload from "./ComponentsEureka/FileUploadForm";
-import ApiComponent from "./ComponentsEureka/ApiComponent";
-// import Login from "./ComponentsEureka/Login";
+
+
+// import Login from "./ComponentsEureka/Login"
+
+
 function AppEureka() {
 
-  const [apiResponse, setApiResponse] = useState([]);
-
-  const handleDataFetched = (data) => {
-    setApiResponse(data);
-  };
+  
   return (
     <>
       <>
