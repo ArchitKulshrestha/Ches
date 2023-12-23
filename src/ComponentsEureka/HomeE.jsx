@@ -3,11 +3,16 @@ import { SectionWrapper } from "../hoc";
 
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Link } from 'react-router-dom';
 
 function HomeE() {
+  const handleclick = ()=> {
+    < Link to = "/data" />
+  }
+  
   return (
     <>
-      <section className="relative w-full h-[80vh] mx-auto">
+      <section className="relative w-full h-[80vh] mx-auto ">
         <div className="absolute top-[3.5rem] w-full">
           <motion.div
             className="mt-[5rem]"
@@ -29,7 +34,12 @@ function HomeE() {
             </ul>
           </motion.div>
         </div>
+        
       </section>
+      <Link to="/data">
+        <button className='   bg-secondary-600 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800 ml-2 mt-2' onClick={handleclick}>See Your Content</button>
+       </Link>
+      
     </>
   );
 }

@@ -3,10 +3,15 @@ import { Link } from "react-router-dom";
 import { Eureka } from "../assets";
 
 function NavBar() {
+  const token = localStorage.getItem('token')
+  const isLoggedIn = !!token;
   const handleSignOut = () => {
     localStorage.removeItem("token");
     window.location.href = "/eureka";
   };
+  const Upload_file = () =>{
+    <Link to = "/Upload"></Link>
+  }
   return (
     <>
       <header className="w-full flex items-center py-3 fixed top-0 z-30 border-b-[0px] drop-shadow-md backdrop-blur-[10px] bg-background-900/70 ">
@@ -18,6 +23,21 @@ function NavBar() {
               className="w-[8rem] h-[3.5rem] hover:scale-105 duration-300"
             />
           </a>
+
+
+
+          <ul className="list-none  md:flex flex-row gap-8">
+            {isLoggedIn && (
+              <Link to="/Upload">
+        <button
+        className="bg-secondary-600 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800"
+        onClick={Upload_file}>
+  upload
+      </button>
+      </Link>
+      )}
+
+          </ul>
 
           <ul className="list-none  md:flex flex-row gap-8">
             {localStorage.getItem("token") ? (
@@ -36,6 +56,7 @@ function NavBar() {
               </Link>
             )}
           </ul>
+
         </nav>
       </header>
     </>
