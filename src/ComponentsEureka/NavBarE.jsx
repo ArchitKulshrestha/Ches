@@ -4,9 +4,10 @@ import { Eureka } from "../assets";
 
 function NavBar() {
   const handleSignOut = () => {
-    localStorage.removeItem("token");
+    sessionStorage.removeItem("token");
     window.location.href = "/eureka";
   };
+
   return (
     <>
       <header className="w-full flex items-center py-3 fixed top-0 z-30 border-b-[0px] drop-shadow-md backdrop-blur-[10px] bg-background-900/70 ">
@@ -20,12 +21,12 @@ function NavBar() {
           </a>
 
           <ul className="list-none  md:flex flex-row gap-8">
-            {localStorage.getItem("token") ? (
+            {sessionStorage.getItem("token") ? (
               <Link to="/eureka">
                 <button
-                  className="border-2 border-secondary-700 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800"
+                  className="border-2 border-background-300/50 py-2 px-4 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800"
                   onClick={handleSignOut}>
-                  LogOut{" "}
+                  SignOut{" "}
                 </button>
               </Link>
             ) : (

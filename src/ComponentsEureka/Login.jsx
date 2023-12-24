@@ -33,7 +33,7 @@ const Login = () => {
         console.log(res.data);
         reset();
         if (res.data?.token) {
-          localStorage.setItem("token", JSON.stringify(res.data.token));
+          sessionStorage.setItem("token", JSON.stringify(res.data.token));
 
           return <Navigate to="/eureka" />;
         } else {
@@ -83,7 +83,7 @@ const Login = () => {
               Login
             </button>
           </form>
-          {localStorage.getItem("token") && <Navigate to="/eureka" />}
+          {sessionStorage.getItem("token") && <Navigate to="/eureka" />}
         </motion.div>
       </div>
     </section>
