@@ -12,14 +12,20 @@ import { events } from "../Constants";
 const EventCard = ({ content, index }) => {
   return (
     <>
-      <div
-        className="w-[90%] sm:w-[280px] bg-background-900/70 rounded-[20px] py-8 px-8 min-h-[280px]    cursor-pointer"
-        onClick={() =>
-          document.getElementById(`my_modal_${index}`).showModal()
-        }>
-        <h1 className="text-2xl font-semibold">Event {index + 1}</h1>
-        <p className="text-[16px] my-6">{content}</p>
-      </div>
+      <motion.div variants={fadeIn("right", "spring", index * 0.4, 0.3)}>
+        <Tilt
+          tiltMaxAngleX={10}
+          scale={1.02}
+          tiltMaxAngleY={10}
+          transitionSpeed={1950}
+          className="w-[90%] sm:w-[280px] bg-background-900/70 rounded-[20px] py-4 px-4 min-h-[300px]    cursor-pointer"
+          onClick={() =>
+            document.getElementById(`my_modal_${index}`).showModal()
+          }>
+          <h1 className="text-2xl font-semibold">Event {index + 1}</h1>
+          <p className="text-[16px] my-6">{content}</p>
+        </Tilt>
+      </motion.div>
       <dialog
         id={`my_modal_${index}`}
         className="drop-shadow-md backdrop-blur-[10px] bg-background-800/70 rounded-[20px] py-8 px-8 sm:w-1/2 w-full ">
@@ -62,12 +68,11 @@ const EventCard = ({ content, index }) => {
 function Event() {
   return (
     <>
-      <div>
-        <motion.div variants={textVariant()}>
-          <h2 className={styles.sectionHeadText}>Events.</h2>
-        </motion.div>
+      <motion.div variants={textVariant(0.2)}>
+        <h2 className={styles.sectionHeadText}>Events.</h2>
+
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn("right", "spring", 0.4, 0.5)}
           className="mt-4  max-w-3xl leading-[30px]">
           lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -80,7 +85,7 @@ function Event() {
             <EventCard key={index} index={index} {...event} />
           ))}
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

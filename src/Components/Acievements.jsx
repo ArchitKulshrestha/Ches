@@ -11,7 +11,7 @@ import { SectionWrapper } from "../hoc";
 const AchievementCard = ({ content, index, img }) => {
   return (
     <Tilt
-      className="w-[90%] sm:w-[300px] "
+      className="w-[90%] sm:w-[380px] "
       tiltMaxAngleX={10}
       scale={1.02}
       tiltMaxAngleY={10}
@@ -19,14 +19,14 @@ const AchievementCard = ({ content, index, img }) => {
       <motion.div
         variants={fadeIn("right", "spring", index * 0.4, 0.5)}
         className="w-full  p-[1px] rounded-[10px]  ">
-        <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-2 px-6 h-[300px] flex flex-col items-center justify-start overflow-y-scroll">
+        <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-2 px-6 min-h-[300px] flex flex-col items-center justify-start ">
           <img
             src={img}
             alt="About Icon"
             className="w-16 h-16 object-contain"
           />
 
-          <h3 className=" text-sm my-4 ">{content}</h3>
+          <h3 className=" text-sm my-4 text-ellipsis">{content}</h3>
         </div>
       </motion.div>
     </Tilt>

@@ -7,5 +7,16 @@ import Rathore from "./rathore.jpg";
 import Jignasa from "./jignasa.jpg";
 import Sundar from "./sundar.jpg";
 import Eureka from "./Eureka.png";
+import aiche_logo from "./aiche_logo.png";
 
-export { Eureka, ChesLogo, SVNITLOGO, menu, close, Rathore, Jignasa, Sundar };
+export {
+  Eureka,
+  ChesLogo,
+  SVNITLOGO,
+  menu,
+  close,
+  Rathore,
+  Jignasa,
+  Sundar,
+  aiche_logo,
+};
