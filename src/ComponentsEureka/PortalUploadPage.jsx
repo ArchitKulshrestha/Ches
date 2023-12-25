@@ -14,7 +14,7 @@ const PortalUploadPage = () => {
   };
   const handleupload = async (event) => {
     event.preventDefault();
-    const token1 = localStorage.getItem("token");
+    const token1 = sessionStorage.getItem("token");
     const token = token1.replace(/^"(.*)"$/, "$1");
 
     const data1 = new FormData();
@@ -43,8 +43,8 @@ const PortalUploadPage = () => {
   };
   return (
     <>
-      <section className=" bg-background-950 w-full sm:w-full ">
-        <h1 className=" text-text-100 font-bold shadow-md text-center mb-4 md:text-[65px] sm:text-[50px] text-[45px] font-OpenSans ">
+      <section className=" bg-background-950 w-full  ">
+        <h1 className=" text-text-100 font-bold shadow-md text-center mb-4 md:text-[55px] sm:text-[40px] text-[30px] font-OpenSans ">
           Upload your Files Here
         </h1>
         <div className="sm:mx-10 ">

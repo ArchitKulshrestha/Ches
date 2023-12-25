@@ -59,7 +59,7 @@ const Login = () => {
           <h3 className={styles.sectionHeadText}>Login.</h3>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="mt-8 flex flex-col gap-8">
+            className=" mt-8 flex flex-col gap-8">
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your Username</span>
               <input
@@ -80,7 +80,7 @@ const Login = () => {
                 {...register("password")}
                 required
                 placeholder="password"
-                className="bg-text-100 py-4 px-6 placeholder:text-text-300 text-text-800 rounded-lg outline-none border-none font-medium"
+                className="select-none bg-text-100 py-4 px-6 placeholder:text-text-300 text-text-800 rounded-lg outline-none border-none font-medium"
               />
               <div
                 onClick={handlepassword}

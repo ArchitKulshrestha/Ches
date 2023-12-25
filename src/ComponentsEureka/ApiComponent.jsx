@@ -7,7 +7,7 @@ const ApiComponent = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const token1 = localStorage.getItem("token");
+      const token1 = sessionStorage.getItem("token");
       const token = token1.replace(/^"(.*)"$/, "$1");
       const url =
         "https://cdn.defencepost.in/ches_team_app/index.php/apis/get_portal_contents";
@@ -36,11 +36,7 @@ const ApiComponent = () => {
   return (
     <div>
       <div>
-        {apiResponse.length > 0 ? (
-          <DisplayContent portals={apiResponse} />
-        ) : (
-          <p>No data available from the API.</p>
-        )}
+        <DisplayContent portals={apiResponse} />
       </div>
     </div>
   );
