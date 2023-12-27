@@ -19,7 +19,7 @@ const ApiComponent = () => {
 
         const data = response.data;
         setApiResponse(data);
-        console.log(data);
+
         if (response.status === 200) {
           setApiResponse(response.data.data || []);
         } else {

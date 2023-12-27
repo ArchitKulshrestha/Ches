@@ -61,20 +61,20 @@ const FileUploadForm = ({ portalId, contentType }) => {
         </div>
       ) : (
         <div>
-          <h2 className="text-white font-medium mb-1 ml-2 pt-2">
+          <h2 className="text-white font-medium mb-1 ml-3 pt-10 text-mb">
             Portal {portalId}, content-Type {contentType}
           </h2>
 
-          <form className="sm:flex ">
+          <form>
             <input
               type="file"
               onChange={handleFileChange}
-              className="bg-secondary-600 py-2 px-6 rounded-xl outline-none sm:w-[400px] w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800 mr-4 ml-2 mb-3 "
+              className="bg-secondary-500/30 py-2 px-6 rounded-xl outline-none sm:w-[400px] w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800 mr-4 ml-2 mb-3 "
             />
             <div>
               <button
                 type="button"
-                className="bg-secondary-600 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800 ml-2 mt-1"
+                className="bg-secondary-800 border-2 border-background-600 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800 ml-2 "
                 onClick={handleUpload}>
                 Upload
               </button>

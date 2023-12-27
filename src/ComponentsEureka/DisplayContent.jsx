@@ -1,19 +1,21 @@
 /* eslint-disable react/prop-types */
 
+import { Suspense } from "react";
+
 // import { fadeIn, textVariant } from "../utils/motion";
 
 const DisplayContent = ({ portals }) => {
   return (
     <>
-      <section className=" bg-background-950 h-screen ">
+      <section className=" bg-background-950  ">
         <div className="ml-6 py-6 px-4">
-          <h2 className="text-text-100 font-bold shadow-md text-center mb-4 md:text-[45px] sm:text-[40px] text-[55px] font-OpenSans">
+          <h2 className="text-text-100 font-bold shadow-md text-center mb-4 md:text-[55px] sm:text-[40px] text-[30px] font-OpenSans pt-2 ">
             Your Content
           </h2>
           {portals && Array.isArray(portals) ? (
             portals.map((portal, index) => (
               <div key={index} className="mb-4">
-                <h3 className="text-text-100 font-bold shadow-md">
+                <h3 className="text-text-100 font-bold shadow-md text-xl">
                   Portal ID: {portal.portal_details.portal_id}
                 </h3>
 
@@ -23,7 +25,7 @@ const DisplayContent = ({ portals }) => {
                   <div className="mt-3">
                     {portal.portal_conent.map((content, contentIndex) => (
                       <div key={contentIndex}>
-                        <p className="text-text-100  shadow-md mb-3">
+                        <p className="text-text-100 text-mb shadow-md mb-3">
                           Content Type: {content.content_type}
                         </p>
 
@@ -49,10 +51,16 @@ const DisplayContent = ({ portals }) => {
                           </video>
                         )}
                         {content.content_type === "image" && (
-                          <img
-                            className="h-[200px] w-[200px]"
-                            src={content.content}
-                          />
+                          <Suspense fallback={<div>Loading...</div>}>
+                            <img
+                              className="h-[350px] w-[350px]"
+                              src={content.content}
+                              alt="content"
+                              onClick={() => {
+                                window.open(content.content);
+                              }}
+                            />
+                          </Suspense>
                         )}
                       </div>
                     ))}

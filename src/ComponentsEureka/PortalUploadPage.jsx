@@ -43,21 +43,23 @@ const PortalUploadPage = () => {
   };
   return (
     <>
-      <section className=" bg-background-950 w-full  ">
+      <section className=" bg-background-950 w-full  pb-20">
         <h1 className=" text-text-100 font-bold shadow-md text-center mb-4 md:text-[55px] sm:text-[40px] text-[30px] font-OpenSans ">
           Upload your Files Here
         </h1>
         <div className="sm:mx-10 ">
-          <form className="sm:flex">
+          <form className="">
             <textarea
               value={text}
+              rows={4}
+              cols={33}
               onChange={handlechange}
               placeholder="Abstract"
-              className="bg-secondary-600 py-2 px-6 rounded-xl outline-none sm:w-[400px] w-[350px] mr-4 text-text-100 font-bold shadow-md hover:bg-secondary-800 ml-2 "
+              className="bg-secondary-500/30  rounded-xl outline-none mr-4 text-text-100 font-bold shadow-md sm:p-4 p-2 placeholder:text-text-200 hover:bg-secondary-800 ml-2 "
             />
             <div>
               <button
-                className="   bg-secondary-600 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800 ml-2 mt-2"
+                className="   bg-secondary-800 border-2 border-background-600 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-900 ml-2 mt-2"
                 onClick={handleupload}>
                 upload
               </button>
@@ -71,9 +73,9 @@ const PortalUploadPage = () => {
           <FileUploadForm portalId={5} contentType="image" />
           <Link to="/data">
             <button
-              className="   bg-secondary-600 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800 ml-2 mt-2"
+              className="   bg-secondary-500/80 border-2 border-background-600   py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-900 ml-2 mt-8"
               onClick={handleclick}>
-              See Your Content
+              Visit Dashboard
             </button>
           </Link>
         </div>
