@@ -9,7 +9,7 @@ import { SectionWrapper } from "../hoc";
 //import { ChesLogo } from "../assets";
 import { events } from "../Constants";
 
-const EventCard = ({ content, title, img, index }) => {
+const EventCard = ({ content, title, img, index, link }) => {
   return (
     <>
       <Tilt
@@ -19,20 +19,19 @@ const EventCard = ({ content, title, img, index }) => {
         transitionSpeed={1950}>
         <motion.div
           variants={fadeIn("right", "spring", index * 0.4, 0.3)}
-          className="w-[90%] sm:w-[280px] bg-background-900/70 rounded-[20px] py-4 px-4 min-h-[300px]    cursor-pointer"
+          className="w-[90%] sm:w-[280px] hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-4 px-4 min-h-[300px]    cursor-pointer"
           onClick={() =>
             document.getElementById(`my_modal_${index}`).showModal()
           }>
-          <h1 className="text-2xl font-semibold"> {title}</h1>
+          <h1 className="text-3xl  font-semibold"> {title}</h1>
 
-          <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-5 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
-            <div>
-              <img
-                src={img}
-                alt="About Icon"
-                className="w-70 h-50 object-contain"
-              />
-            </div>
+          <div className="  rounded-[20px] py-5 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
+            <img
+              src={img}
+              alt="About Icon"
+              className="h-[14rem] object-cover   overflow-hidden  rounded-xl "
+            />
+
             <p className="text-text-300 text-center mt-4 font-semibold">
               Explore
             </p>
@@ -45,21 +44,15 @@ const EventCard = ({ content, title, img, index }) => {
         <div className="modal-box">
           <div className="flex gap-4 flex-wrap">
             <div>
-              <img
-                src={img}
-                alt="About Icon"
-                className="w-32 h-16 object-contain"
-              />
-            </div>
-
-            <div>
-              <h3 className="text-2xl text-text-200 font-semibold">
-                Event {title}
-              </h3>
-              <p className="py-4 text-lg text-text-200 font-semibold">
+              <h3 className="text-3xl text-text-200 font-semibold">{title}</h3>
+              <p className="py-4 text-base sm:text-lg text-text-100 font-semibold">
                 {content}
               </p>
-              <a className="text-text-300 hover:text-accent-400 my-2">
+              <a
+                className="text-text-300 hover:text-accent-400 my-2"
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer">
                 Know More
               </a>
             </div>
@@ -67,7 +60,7 @@ const EventCard = ({ content, title, img, index }) => {
           <div className="modal-action">
             <form method="dialog">
               {/* if there is a button in form, it will close the modal */}
-              <button className="bg-secondary-600 py-3 mt-3 px-8 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800">
+              <button className="bg-secondary-800 py-2 mt-3 px-5 rounded-xl outline-none  text-text-100 font-bold shadow-md hover:bg-secondary-700 border-2 border-secondary-500">
                 Close
               </button>
             </form>
@@ -87,7 +80,9 @@ function Event() {
         <motion.p
           variants={fadeIn("right", "spring", 0.4, 0.5)}
           className="mt-4  max-w-3xl leading-[30px]">
-          content
+          lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud
         </motion.p>
         <div className="mt-20 flex flex-wrap gap-8">
           {/* Open the modal using document.getElementById('ID').showModal() method */}

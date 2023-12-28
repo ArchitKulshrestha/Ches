@@ -8,6 +8,7 @@ import {
   Event,
   Footer,
 } from "./Components";
+import Developer from "./Components/developer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Event />
         <Acievement />
         <Team />
+        <Developer />
 
         <Contact />
         <Footer />
