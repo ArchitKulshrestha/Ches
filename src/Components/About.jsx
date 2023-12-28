@@ -8,7 +8,7 @@ import Tilt from "react-parallax-tilt";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { slides } from "../constants";
+import { slides } from "../Constants";
 
 function About() {
   const settings = {

@@ -12,20 +12,21 @@ import { events } from "../Constants";
 const EventCard = ({ content, index }) => {
   return (
     <>
-      <motion.div variants={fadeIn("right", "spring", index * 0.4, 0.3)}>
-        <Tilt
-          tiltMaxAngleX={10}
-          scale={1.02}
-          tiltMaxAngleY={10}
-          transitionSpeed={1950}
+      <Tilt
+        tiltMaxAngleX={10}
+        scale={1.02}
+        tiltMaxAngleY={10}
+        transitionSpeed={1950}>
+        <motion.div
+          variants={fadeIn("right", "spring", index * 0.4, 0.3)}
           className="w-[90%] sm:w-[280px] bg-background-900/70 rounded-[20px] py-4 px-4 min-h-[300px]    cursor-pointer"
           onClick={() =>
             document.getElementById(`my_modal_${index}`).showModal()
           }>
           <h1 className="text-2xl font-semibold">Event {index + 1}</h1>
           <p className="text-[16px] my-6">{content}</p>
-        </Tilt>
-      </motion.div>
+        </motion.div>{" "}
+      </Tilt>
       <dialog
         id={`my_modal_${index}`}
         className="drop-shadow-md backdrop-blur-[10px] bg-background-800/70 rounded-[20px] py-8 px-8 sm:w-1/2 w-full ">
