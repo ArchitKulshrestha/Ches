@@ -28,3 +28,4 @@ vercel.json
 .eslint.cjs
 .gitignore
 ```
+.vite
