@@ -7,8 +7,8 @@ import {
   Home,
   Event,
   Footer,
+  Developer,
 } from "./Components";
-import Developer from "./Components/developer";
 
 function App() {
   return (

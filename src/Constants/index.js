@@ -223,7 +223,7 @@ export const Developers = [
       "https://www.linkedin.com/company/chemical-engineering-society-svnit/mycompany/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Abhishek Sharma",
     Linkedin: "https://www.linkedin.com/in/abhishek-sharma-38b97125b/",
   },
