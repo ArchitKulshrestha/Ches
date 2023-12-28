@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { fadeIn } from "../utils/motion";
 
-import { Sundar, Jignasa, Rathore } from "../assets";
+import { Sundar, Jignasa, Rathore,dhyey } from "../assets";
 
 const FacultyCard = () => {
   return (
     <>
-      <div className=" text-4xl font-semibold mt-8 mb-3">Faculty Advisors</div>
+      <div className=" text-4xl font-semibold mt-10 mb-5"> </div>
       <div className="mt-10 flex flex-wrap gap-8">
         <Tilt
           className="w-[90%] sm:w-[280px] "
@@ -25,17 +25,13 @@ const FacultyCard = () => {
               <img
                 src={Jignasa}
                 alt="About Icon"
-                className="w-20 h-20 rounded-xl object-contain overflow-hidden"
+                className="w-30 h-40 rounded-xl object-contain overflow-hidden"
               />
               <h1 className="text-text-200 text-2xl font-semibold mt-2 text-center">
                 Dr. Jignasa{" "}
+                Chairperson
               </h1>
-              <h3 className=" text-sm my-4 ">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea
-              </h3>
+            <a href="https://svnit.ac.in/facup/jvg_250919.pdf">Dr.Jignasa(C.V)</a>
             </div>
           </motion.div>
         </Tilt>
@@ -48,20 +44,18 @@ const FacultyCard = () => {
           <motion.div
             variants={fadeIn("right", "spring", 0.5, 0.75)}
             className="w-full  p-[1px] rounded-[10px]  ">
-            <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-5 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
+            <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-5 px-6 min-h-[200px] flex justify-evenly items-center flex-col">
               <img
                 src={Rathore}
                 alt="About Icon"
-                className="w-20 h-20 rounded-xl object-contain overflow-hidden"
+                className="w-30 h-30 rounded-xl object-contain overflow-hidden"
               />
               <h1 className="text-text-200 text-2xl font-semibold mt-2 text-center">
                 Dr. Rathode{" "}
+                Co-Chairperson
               </h1>
               <h3 className=" text-sm my-4 ">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea
+             <a href="https://www.linkedin.com/in/vineet-kumar-rathore-5170861a/?originalSubdomain=in">Dr.Rathore(linkedin)</a>
               </h3>
             </div>
           </motion.div>
@@ -79,17 +73,61 @@ const FacultyCard = () => {
               <img
                 src={Sundar}
                 alt="About Icon"
-                className="w-20 h-20 rounded-xl object-contain overflow-hidden"
+                className="w-30 h-30 rounded-xl object-contain overflow-hidden"
               />
-              <h1 className="text-text-200 text-2xl font-semibold mt-2 text-center">
-                Dr. Sundar{" "}
+              <h1 className="text-text-200 text-2xl font-semibold mt-2 text-center">             
+                Dr. Sundar{"  "}
+                   Co-Chairperson
               </h1>
               <h3 className=" text-sm my-4 ">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea
+              <a href="https://www.svnit.ac.in/facup/SUNDARSK_CV.pdf">Dr.Sundar (C.V)</a>
               </h3>
+            </div>
+          </motion.div>
+        </Tilt>
+        <Tilt
+          className="w-[90%] sm:w-[280px] "
+          tiltMaxAngleX={10}
+          scale={1.02}
+          tiltMaxAngleY={10}
+          transitionSpeed={1950}>
+          <motion.div
+            variants={fadeIn("right", "spring", 0.5, 0.75)}
+            className="w-full  p-[1px] rounded-[10px]  ">
+            <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-6 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
+              <img
+                src={Jignasa}
+                alt="About Icon"
+                className="w-30 h-40 rounded-xl object-contain overflow-hidden"
+              />
+              <h1 className="text-text-200 text-2xl font-semibold mt-2 text-center">              
+                Dhyey Patel  {" "}
+                Co-Chairperson
+              </h1>
+            <a href="https://svnit.ac.in/facup/jvg_250919.pdf">Dr.Jignasa(C.V)</a>
+            </div>
+          </motion.div>
+        </Tilt>
+        <Tilt
+          className="w-[90%] sm:w-[280px] "
+          tiltMaxAngleX={10}
+          scale={1.02}
+          tiltMaxAngleY={10}
+          transitionSpeed={1950}>
+          <motion.div
+            variants={fadeIn("right", "spring", 0.5, 0.75)}
+            className="w-full  p-[1px] rounded-[10px]  ">
+            <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-6 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
+              <img
+                src={dhyey}
+                alt="About Icon"
+                className="w-30 h-40 rounded-xl object-contain overflow-hidden"
+              />
+              <h1 className="text-text-200 text-2xl font-semibold mt-2 text-center">               
+                Dhyey Bhagat{" "}
+                President
+              </h1>
+            <a href="https://www.linkedin.com/in/dhyey-bhagat-a36599215/">Dhyey bhagat </a>
             </div>
           </motion.div>
         </Tilt>
