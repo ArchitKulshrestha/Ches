@@ -6,10 +6,10 @@ import { styles } from "../styles";
 import Tilt from "react-parallax-tilt";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
-import { ChesLogo } from "../assets";
+//import { ChesLogo } from "../assets";
 import { events } from "../Constants";
 
-const EventCard = ({ content, index }) => {
+const EventCard = ({ content, title, img, index }) => {
   return (
     <>
       <Tilt
@@ -23,8 +23,20 @@ const EventCard = ({ content, index }) => {
           onClick={() =>
             document.getElementById(`my_modal_${index}`).showModal()
           }>
-          <h1 className="text-2xl font-semibold">Event {index + 1}</h1>
-          <p className="text-[16px] my-6">{content}</p>
+          <h1 className="text-2xl font-semibold"> {title}</h1>
+
+          <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-5 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
+            <div>
+              <img
+                src={img}
+                alt="About Icon"
+                className="w-70 h-50 object-contain"
+              />
+            </div>
+            <p className="text-text-300 text-center mt-4 font-semibold">
+              Explore
+            </p>
+          </div>
         </motion.div>{" "}
       </Tilt>
       <dialog
@@ -34,7 +46,7 @@ const EventCard = ({ content, index }) => {
           <div className="flex gap-4 flex-wrap">
             <div>
               <img
-                src={ChesLogo}
+                src={img}
                 alt="About Icon"
                 className="w-32 h-16 object-contain"
               />
@@ -42,13 +54,13 @@ const EventCard = ({ content, index }) => {
 
             <div>
               <h3 className="text-2xl text-text-200 font-semibold">
-                Event {index}
+                Event {title}
               </h3>
               <p className="py-4 text-lg text-text-200 font-semibold">
                 {content}
               </p>
               <a className="text-text-300 hover:text-accent-400 my-2">
-                important link
+                Know More
               </a>
             </div>
           </div>
@@ -75,10 +87,7 @@ function Event() {
         <motion.p
           variants={fadeIn("right", "spring", 0.4, 0.5)}
           className="mt-4  max-w-3xl leading-[30px]">
-          lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea
+          content
         </motion.p>
         <div className="mt-20 flex flex-wrap gap-8">
           {/* Open the modal using document.getElementById('ID').showModal() method */}
