@@ -10,21 +10,17 @@ import { Sundar, Jignasa, Rathore, dhyey } from "../assets";
 const FacultyCard = () => {
   return (
     <>
-      <motion.h1
-        className=" text-4xl font-semibold mt-10 mb-5"
-        variants={fadeIn("right", "tween", 0.1, 0.4)}>
-        Mentors
-      </motion.h1>
-      <div className="mt-10 flex flex-wrap gap-8">
+      <h1 className=" text-4xl font-semibold mt-10 mb-5">Mentors</h1>
+      <motion.div
+        variants={fadeIn("right", "spring", 0.2, 0.5)}
+        className="mt-10 flex flex-wrap gap-8">
         <Tilt
           className="w-[90%] sm:w-[280px] "
           tiltMaxAngleX={10}
           scale={1.02}
           tiltMaxAngleY={10}
           transitionSpeed={1950}>
-          <motion.div
-            variants={fadeIn("right", "spring", 0.5, 0.75)}
-            className="w-full  p-[1px] rounded-[10px]  ">
+          <div className="w-full  p-[1px] rounded-[10px]  ">
             <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-6 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
               <img
                 src={Jignasa}
@@ -45,7 +41,7 @@ const FacultyCard = () => {
                 C.V.
               </a>
             </div>
-          </motion.div>
+          </div>
         </Tilt>
         <Tilt
           className="w-[90%] sm:w-[280px] "
@@ -53,9 +49,7 @@ const FacultyCard = () => {
           scale={1.02}
           tiltMaxAngleY={10}
           transitionSpeed={1950}>
-          <motion.div
-            variants={fadeIn("right", "spring", 0.5, 0.75)}
-            className="w-full  p-[1px] rounded-[10px]  ">
+          <div className="w-full  p-[1px] rounded-[10px]  ">
             <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-5 px-6 min-h-[200px] flex justify-evenly items-center flex-col">
               <img
                 src={Rathore}
@@ -74,11 +68,11 @@ const FacultyCard = () => {
                   className="text-text-300 hover:text-accent-400 my-2"
                   target="_blank"
                   rel="noopener noreferrer">
-                  Dr.Rathore(linkedin)
+                  linkedin{" "}
                 </a>
               </h3>
             </div>
-          </motion.div>
+          </div>
         </Tilt>
         <Tilt
           className="w-[90%] sm:w-[280px] "
@@ -86,9 +80,7 @@ const FacultyCard = () => {
           scale={1.02}
           tiltMaxAngleY={10}
           transitionSpeed={1950}>
-          <motion.div
-            variants={fadeIn("right", "spring", 0.5, 0.75)}
-            className="w-full  p-[1px] rounded-[10px]  ">
+          <div className="w-full  p-[1px] rounded-[10px]  ">
             <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-5 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
               <img
                 src={Sundar}
@@ -111,7 +103,7 @@ const FacultyCard = () => {
                 </a>
               </h3>
             </div>
-          </motion.div>
+          </div>
         </Tilt>
         <Tilt
           className="w-[90%] sm:w-[280px] "
@@ -119,9 +111,7 @@ const FacultyCard = () => {
           scale={1.02}
           tiltMaxAngleY={10}
           transitionSpeed={1950}>
-          <motion.div
-            variants={fadeIn("right", "spring", 0.5, 0.75)}
-            className="w-full  p-[1px] rounded-[10px]  ">
+          <div className="w-full  p-[1px] rounded-[10px]  ">
             <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-6 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
               <img
                 src={dhyey}
@@ -142,7 +132,7 @@ const FacultyCard = () => {
                 linkedin{" "}
               </a>
             </div>
-          </motion.div>
+          </div>
         </Tilt>
         <Tilt
           className="w-[90%] sm:w-[280px] "
@@ -150,9 +140,7 @@ const FacultyCard = () => {
           scale={1.02}
           tiltMaxAngleY={10}
           transitionSpeed={1950}>
-          <motion.div
-            variants={fadeIn("right", "spring", 0.5, 0.75)}
-            className="w-full  p-[1px] rounded-[10px]  ">
+          <div className="w-full  p-[1px] rounded-[10px]  ">
             <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-6 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
               <img
                 src={Jignasa}
@@ -173,9 +161,9 @@ const FacultyCard = () => {
                 C.V
               </a>
             </div>
-          </motion.div>
+          </div>
         </Tilt>
-      </div>
+      </motion.div>
     </>
   );
 };

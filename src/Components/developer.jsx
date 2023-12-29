@@ -6,12 +6,11 @@ import { motion } from "framer-motion";
 import { FaLinkedin } from "react-icons/fa";
 import { SectionWrapper } from "../hoc";
 
-function Develop() {
+function Developer() {
   return (
     <>
-      <motion.div variants={textVariant(0.3)}>
-        <h2 className={"text-4xl font-semibold  mb-5"}>Developers</h2>
-      </motion.div>
+      <h2 className={"text-4xl font-semibold  mb-5"}>Developers</h2>
+
       <div className=" flex flex-wrap gap-10">
         {Developers.map((developer) => (
           <Tilt
@@ -21,9 +20,7 @@ function Develop() {
             scale={1.02}
             tiltMaxAngleY={10}
             transitionSpeed={1950}>
-            <motion.div
-              variants={fadeIn("right", "spring", 0.5, 0.75)}
-              className="w-full  rounded-[10px]  ">
+            <div className="w-full  rounded-[10px]  ">
               <div className="w-[300px] h-[100px]  hover:shadow-text-500/70 backdrop-blur-[10px] bg-background-900/70 rounded-[20px] text-[#f7ebfa]  p-4 hover:shadow-lg">
                 <div className=" font-semibold text-lg ">{developer.name}</div>
 
@@ -34,7 +31,7 @@ function Develop() {
                   <FaLinkedin className="text-2xl text-text-200 hover:text-accent-400 mt-4" />
                 </a>
               </div>
-            </motion.div>
+            </div>
           </Tilt>
         ))}
       </div>
@@ -42,4 +39,4 @@ function Develop() {
   );
 }
 
-export default SectionWrapper(Develop, "Develop");
+export default SectionWrapper(Developer, "Developer");

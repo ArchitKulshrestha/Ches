@@ -21,7 +21,7 @@ function About() {
 
   return (
     <>
-      <motion.div variants={fadeIn("left", "tween", 0.2, 0.75)}>
+      <motion.div variants={fadeIn("left", "tween", 0.2, 0.5)}>
         <h2 className={styles.sectionHeadText}>About.</h2>
       </motion.div>
 
