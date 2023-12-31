@@ -212,15 +212,13 @@ export const Developers = [
   {
     id: 2,
     name: "Aditya Kumar",
-    Linkedin:
-      "https://www.linkedin.com/company/chemical-engineering-society-svnit/mycompany/",
+    Linkedin: "https://www.linkedin.com/in/adityak1911/",
   },
 
   {
     id: 3,
     name: "Abhay Dubey",
-    Linkedin:
-      "https://www.linkedin.com/company/chemical-engineering-society-svnit/mycompany/",
+    Linkedin: "https://www.linkedin.com/in/abhay-dubey-480a48264/",
   },
   {
     id: 4,
@@ -230,8 +228,7 @@ export const Developers = [
   {
     id: 5,
     name: "Shikhar Shukla",
-    Linkedin:
-      "https://www.linkedin.com/company/chemical-engineering-society-svnit/mycompany/",
+    Linkedin: "https://www.linkedin.com/in/shikhar-shukla-011062256/",
   },
   {
     id: 6,

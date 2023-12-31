@@ -8,10 +8,6 @@ const FileUploadForm = ({ portalId, contentType }) => {
 
   const handleFileChange = (event) => {
     setFile(event.target.files[0]);
-
-    if (portalId === 1) {
-      setTextContentType("text/plain");
-    }
   };
 
   const handleUpload = async () => {
