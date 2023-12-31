@@ -4,7 +4,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import Tilt from "react-parallax-tilt";
-import { fadeIn } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 //import { ChesLogo } from "../assets";
 import { events } from "../Constants";
@@ -17,8 +17,7 @@ const EventCard = ({ content, title, img, index, link }) => {
         scale={1.02}
         tiltMaxAngleY={10}
         transitionSpeed={1950}>
-        <motion.div
-          variants={fadeIn("right", "spring", index * 0.1, 0.3)}
+        <div
           className="w-[90%] sm:w-[280px] hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-4 px-4 min-h-[300px]    cursor-pointer"
           onClick={() =>
             document.getElementById(`my_modal_${index}`).showModal()
@@ -36,7 +35,7 @@ const EventCard = ({ content, title, img, index, link }) => {
               Explore
             </p>
           </div>
-        </motion.div>{" "}
+        </div>{" "}
       </Tilt>
       <dialog
         id={`my_modal_${index}`}

@@ -11,6 +11,9 @@ export default {
         about_width_logo: { min: "640px", max: "1140px" },
         about_width_logo_mobile: { min: "450px", max: "640px" },
         about_width_logo_mobile_small: { max: "450px" },
+        em: { min: "550px", max: "730px" },
+        emobile: { min: "490px", max: "550px" },
+        es: { max: "490px" },
       },
       colors: {
         text: {

@@ -16,7 +16,7 @@ function NavBar() {
             <img
               src={Eureka}
               alt="Logo"
-              className="w-[8rem] h-[3.5rem] hover:scale-105 duration-300"
+              className="w-[11rem] h-[3.5rem] hover:scale-105 duration-300 em:h-[3rem] em:w-[9rem] emobile:w-[8rem] emobile:h-[3rem] es:w-[7rem] es:h-[2.5rem]"
             />
           </a>
 

@@ -11,9 +11,7 @@ const FacultyCard = () => {
   return (
     <>
       <h1 className=" text-4xl font-semibold mt-10 mb-5">Mentors</h1>
-      <motion.div
-        variants={fadeIn("right", "spring", 0.2, 0.5)}
-        className="mt-10 flex flex-wrap gap-8">
+      <div className="mt-10 flex flex-wrap gap-8">
         <Tilt
           className="w-[90%] sm:w-[280px] "
           tiltMaxAngleX={10}
@@ -163,7 +161,7 @@ const FacultyCard = () => {
             </div>
           </div>
         </Tilt>
-      </motion.div>
+      </div>
     </>
   );
 };

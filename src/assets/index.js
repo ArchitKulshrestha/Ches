@@ -11,10 +11,11 @@ import aiche_logo from "./aiche_logo.png";
 import SIPHON from "./SIPHON.png";
 import Workshop from "./Workshop.png";
 import K12 from "./K12.png";
-import uphoto from "./uphoto.png"
-import car from "./car.png"
-import dhyey from "./dhyey.png"
-import Alchemy from "./Alchemy.png"
+import uphoto from "./uphoto.png";
+import car from "./car.png";
+import dhyey from "./dhyey.png";
+import Alchemy from "./Alchemy.png";
+import EurekaHome from "./Home-image.png";
 export {
   Eureka,
   ChesLogo,
@@ -32,4 +33,5 @@ export {
   car,
   dhyey,
   Alchemy,
+  EurekaHome,
 };

@@ -7,7 +7,9 @@ import { Suspense } from "react";
 const DisplayContent = ({ portals }) => {
   return (
     <>
-      <section className=" bg-background-950  ">
+      <section
+        className=" bg-background-950  min-h-screen
+      ">
         <div className="ml-6 py-6 px-4">
           <h2 className="text-text-100 font-bold shadow-md text-center mb-4 md:text-[55px] sm:text-[40px] text-[30px] font-OpenSans pt-2 ">
             Your Content
@@ -15,7 +17,7 @@ const DisplayContent = ({ portals }) => {
           {portals && Array.isArray(portals) ? (
             portals.map((portal, index) => (
               <div key={index} className="mb-4">
-                <h3 className="text-text-100 font-bold shadow-md text-xl">
+                <h3 className="text-text-100 font-bold shadow-md text-xl ">
                   Portal ID: {portal.portal_details.portal_id}
                 </h3>
 
