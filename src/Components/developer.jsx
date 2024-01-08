@@ -11,7 +11,7 @@ function Developer() {
     <>
       <h2 className={"text-4xl font-semibold  mb-5"}>Developers</h2>
 
-      <div className=" flex flex-wrap gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5  gap-8 ">
         {Developers.map((developer) => (
           <Tilt
             key={developer.id}
@@ -21,7 +21,7 @@ function Developer() {
             tiltMaxAngleY={10}
             transitionSpeed={1950}>
             <div className="w-full  rounded-[10px]  ">
-              <div className="w-[300px] h-[100px]  hover:shadow-text-500/70 backdrop-blur-[10px] bg-background-900/70 rounded-[20px] text-[#f7ebfa]  p-4 hover:shadow-lg">
+              <div className="w-[98%] sm:w-[220px] h-[100px]  hover:shadow-text-500/70 backdrop-blur-[10px] bg-background-900/70 rounded-[20px] text-[#f7ebfa]  p-4 hover:shadow-lg">
                 <div className=" font-semibold text-lg ">{developer.name}</div>
 
                 <a

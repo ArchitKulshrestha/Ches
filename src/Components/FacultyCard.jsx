@@ -11,9 +11,9 @@ const FacultyCard = () => {
   return (
     <>
       <h1 className=" text-4xl font-semibold mt-10 mb-5">Mentors</h1>
-      <div className="mt-10 flex flex-wrap gap-8">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5  gap-8">
         <Tilt
-          className="w-[90%] sm:w-[280px] "
+          className="w-[98%] sm:w-[220px]"
           tiltMaxAngleX={10}
           scale={1.02}
           tiltMaxAngleY={10}
@@ -23,7 +23,7 @@ const FacultyCard = () => {
               <img
                 src={Jignasa}
                 alt="About Icon"
-                className="w-30 h-40 rounded-xl object-contain overflow-hidden"
+                className="w-24 h-30 rounded-xl object-contain overflow-hidden"
               />
               <h1 className="text-text-200 text-2xl font-semibold mt-2 text-center">
                 Dr. Jignasa
@@ -42,7 +42,7 @@ const FacultyCard = () => {
           </div>
         </Tilt>
         <Tilt
-          className="w-[90%] sm:w-[280px] "
+          className="w-[98%] sm:w-[220px]"
           tiltMaxAngleX={10}
           scale={1.02}
           tiltMaxAngleY={10}
@@ -52,7 +52,7 @@ const FacultyCard = () => {
               <img
                 src={Rathore}
                 alt="About Icon"
-                className="w-30 h-30 rounded-xl object-contain overflow-hidden"
+                className="w-24 h-30 rounded-xl object-contain overflow-hidden"
               />
               <h1 className="text-text-200 text-2xl font-semibold mt-2 text-center">
                 Dr. Rathode
@@ -73,7 +73,7 @@ const FacultyCard = () => {
           </div>
         </Tilt>
         <Tilt
-          className="w-[90%] sm:w-[280px] "
+          className="w-[98%] sm:w-[220px] h-[280px]"
           tiltMaxAngleX={10}
           scale={1.02}
           tiltMaxAngleY={10}
@@ -83,7 +83,7 @@ const FacultyCard = () => {
               <img
                 src={Sundar}
                 alt="About Icon"
-                className="w-30 h-30 rounded-xl object-contain overflow-hidden"
+                className="w-24 h-30 rounded-xl object-contain overflow-hidden"
               />
               <h1 className="text-text-200 text-2xl font-semibold mt-2 text-center">
                 Dr. Sundar{"  "}
@@ -104,7 +104,7 @@ const FacultyCard = () => {
           </div>
         </Tilt>
         <Tilt
-          className="w-[90%] sm:w-[280px] "
+          className="w-[98%] sm:w-[220px]"
           tiltMaxAngleX={10}
           scale={1.02}
           tiltMaxAngleY={10}
@@ -114,7 +114,7 @@ const FacultyCard = () => {
               <img
                 src={dhyey}
                 alt="About Icon"
-                className="w-30 h-40 rounded-xl object-contain overflow-hidden"
+                className="w-24 h-30 rounded-xl object-contain overflow-hidden"
               />
               <h1 className="text-text-200 text-2xl font-semibold mt-2 text-center">
                 Dhyey Bhagat
@@ -133,17 +133,17 @@ const FacultyCard = () => {
           </div>
         </Tilt>
         <Tilt
-          className="w-[90%] sm:w-[280px] "
+          className="w-[98%] sm:w-[220px] "
           tiltMaxAngleX={10}
           scale={1.02}
           tiltMaxAngleY={10}
           transitionSpeed={1950}>
-          <div className="w-full  p-[1px] rounded-[10px]  ">
+          <div className="w-full  p-[1px] rounded-[10px] ]">
             <div className=" hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-6 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
               <img
                 src={Jignasa}
                 alt="About Icon"
-                className="w-30 h-40 rounded-xl object-contain overflow-hidden"
+                className="w-24 h-30 rounded-xl object-contain overflow-hidden"
               />
               <h1 className="text-text-200 text-2xl font-semibold mt-2 text-center">
                 Dhyey Patel

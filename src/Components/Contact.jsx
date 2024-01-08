@@ -63,7 +63,7 @@ function Contact() {
 
   return (
     <>
-      <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden sm:w-[70%]">
+      <div className=" flex xl:flex-row flex-col-reverse gap-10 overflow-hidden sm:w-[70%]">
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 0.4)}
           className="flex-[0.75] bg-background-900/70 backdrop-blur-md py-4 p-2 sm:p-6 rounded-2xl">

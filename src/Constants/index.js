@@ -118,7 +118,7 @@ export const Achievements = [
   },
   {
     content:
-      "Student Regional Conference 2023:Chemical Engineering Society (ChES) had successfully organized Synergicon - Student Regional Conference for the year 2023 at Sardar Vallabhbhai National Institute of Technology, Surat during 18th August to 20th August 2023. In this conference, students from different Chapters of India as well as International Chapters had enthusiastically participated which is a great achievement for ChES to organize such an International Conference.Team Matrix of ChES SVNIT had secured the first position in ChemE Jeopardy competition held in Synergicon (SRC 2023) organized during 18th August to 20th August 2023 .",
+      "Successfully organized Synergicon - Student Regional Conference for the year 2023 at Sardar Vallabhbhai National Institute of Technology, Surat during 18th August to 20th August 2023. In this conference, students from different Chapters of India as well as International Chapters participated which is a great achievement for ChES to organize such an International Conference.Team Matrix of ChES SVNIT had secured the first position in the ChemE Jeopardy competition .",
 
     img: ChesLogo,
   },
@@ -172,7 +172,7 @@ export const Teams = [
 
   {
     id: 6,
-    name: "Design and Video Committee",
+    name: "Design and Videography",
     Head: " Ranjana Soni",
     Linkedin:
       "https://www.linkedin.com/company/chemical-engineering-society-svnit/mycompany/",

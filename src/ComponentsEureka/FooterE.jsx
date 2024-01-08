@@ -11,7 +11,7 @@ const FooterE = () => {
         className="h-[5rem] w-[5rem] mt-[1rem] mb-[1.5rem]"></img>
       <h2>AIChE ChES</h2>
       <h2>Sardar Vallabhbhai National Institute of Technology, Surat</h2>
-      <hr className=" border-accent-600 my-4 w-[60rem]" />
+      <hr className=" border-accent-600 my-4 w-[95%] sm:w-[80%]" />
 
       <p className="text-text-200 text-[14px]  mb-2">
         © {year} AIChE ChES SVNIT. All rights reserved.

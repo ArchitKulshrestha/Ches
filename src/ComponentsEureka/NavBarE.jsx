@@ -26,13 +26,13 @@ function NavBar() {
                 <button
                   className="border-2 border-background-300/50 py-2 px-4 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800"
                   onClick={handleSignOut}>
-                  SignOut{" "}
+                  LogOut
                 </button>
               </Link>
             ) : (
               <Link to="/login">
                 <button className="bg-secondary-600 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800">
-                  Login{" "}
+                  Login
                 </button>
               </Link>
             )}

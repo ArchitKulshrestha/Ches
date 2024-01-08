@@ -22,17 +22,16 @@ function Team() {
 
       <h2 className={"text-4xl font-semibold mt-10 mb-5"}>Committee</h2>
 
-      <div className="mt-5 flex flex-wrap gap-10">
+      <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8  mx-auto">
         {Teams.map((team) => (
           <Tilt
             key={team.id}
-            className="sm:w-[280px] w-full"
             tiltMaxAngleX={10}
             scale={1.02}
             tiltMaxAngleY={10}
             transitionSpeed={1950}>
             <div className="w-full  rounded-[10px]  ">
-              <div className="w-[300px] h-[120px]  hover:shadow-text-500/70 backdrop-blur-[10px] bg-background-900/70 rounded-[20px] text-[#f7ebfa]  p-4 hover:shadow-lg">
+              <div className=" w-[98%] sm:w-[280px] h-[120px]  hover:shadow-text-500/70 backdrop-blur-[10px] bg-background-900/70 rounded-[20px] text-[#f7ebfa]  p-4 hover:shadow-lg">
                 <div className=" font-semibold text-lg ">{team.name}</div>
                 <div className="text-md py-2">{team.Head}</div>
 

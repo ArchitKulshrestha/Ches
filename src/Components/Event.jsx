@@ -18,7 +18,7 @@ const EventCard = ({ content, title, img, index, link }) => {
         tiltMaxAngleY={10}
         transitionSpeed={1950}>
         <div
-          className="w-[90%] sm:w-[280px] hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-4 px-4 min-h-[300px]    cursor-pointer"
+          className="w-[98%] sm:w-[350px] hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-4 px-4 min-h-[300px]    cursor-pointer"
           onClick={() =>
             document.getElementById(`my_modal_${index}`).showModal()
           }>
@@ -28,7 +28,7 @@ const EventCard = ({ content, title, img, index, link }) => {
             <img
               src={img}
               alt="About Icon"
-              className="h-[14rem] object-cover   overflow-hidden  rounded-xl "
+              className="h-[16rem] object-cover   overflow-hidden  rounded-xl "
             />
 
             <p className="text-text-300 text-center mt-4 font-semibold">
@@ -39,12 +39,12 @@ const EventCard = ({ content, title, img, index, link }) => {
       </Tilt>
       <dialog
         id={`my_modal_${index}`}
-        className="drop-shadow-md backdrop-blur-[10px] bg-background-800/70 rounded-[20px] py-8 px-8 sm:w-1/2 w-full ">
+        className=" top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] drop-shadow-md backdrop-blur-[10px] bg-background-800/70 rounded-[20px] py-8 px-4 sm:w-1/2 w-full ">
         <div className="modal-box">
           <div className="flex gap-4 flex-wrap">
             <div>
               <h3 className="text-3xl text-text-200 font-semibold">{title}</h3>
-              <p className="py-4 text-base sm:text-lg text-text-100 font-semibold">
+              <p className="py-4 text-[14px] sm:text-lg text-text-100 font-semibold">
                 {content}
               </p>
               <a
@@ -81,7 +81,7 @@ function Event() {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud
         </p>
-        <div className="mt-20 flex flex-wrap gap-8">
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Open the modal using document.getElementById('ID').showModal() method */}
           {events.map((event, index) => (
             <EventCard key={index} index={index} {...event} />
