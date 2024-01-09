@@ -5,9 +5,9 @@ import { Sundar, Jignasa, Rathore, dhyey } from "../assets";
 const FacultyCard = () => {
   return (
     <>
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5  gap-8">
+      <div className="mt-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5  gap-4">
         <Tilt
-          className="w-[98%] sm:w-[220px]"
+          className="w-[98%] sm:w-[200px]"
           tiltMaxAngleX={10}
           scale={1.02}
           tiltMaxAngleY={10}
@@ -29,7 +29,7 @@ const FacultyCard = () => {
           </div>
         </Tilt>
         <Tilt
-          className="w-[98%] sm:w-[220px]"
+          className="w-[98%] sm:w-[200px]"
           tiltMaxAngleX={10}
           scale={1.02}
           tiltMaxAngleY={10}
@@ -51,7 +51,7 @@ const FacultyCard = () => {
           </div>
         </Tilt>
         <Tilt
-          className="w-[98%] sm:w-[220px]"
+          className="w-[98%] sm:w-[200px]"
           tiltMaxAngleX={10}
           scale={1.02}
           tiltMaxAngleY={10}
@@ -73,7 +73,7 @@ const FacultyCard = () => {
           </div>
         </Tilt>
         <Tilt
-          className="w-[98%] sm:w-[220px]"
+          className="w-[98%] sm:w-[200px]"
           tiltMaxAngleX={10}
           scale={1.02}
           tiltMaxAngleY={10}
@@ -95,7 +95,7 @@ const FacultyCard = () => {
           </div>
         </Tilt>
         <Tilt
-          className="w-[98%] sm:w-[220px]"
+          className="w-[98%] sm:w-[200px]"
           tiltMaxAngleX={10}
           scale={1.02}
           tiltMaxAngleY={10}

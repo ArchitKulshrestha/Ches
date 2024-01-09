@@ -22,7 +22,7 @@ const AchievementCard = ({ content, img, link }) => {
             alt="About Icon"
             className=" h-[14rem] rounded-2xl object-contain my-4"
           />{" "}
-          <div className="w-full text-left mt-4">
+          <div className="w-full text-left mt-2">
             <h3 className="text-sm">{content}</h3>
           </div>
           <a
@@ -43,7 +43,7 @@ const Achievement = () => {
     <section>
       <h2 className={styles.sectionHeadText}>Achievements.</h2>
 
-      <p className="mt-2  max-w-3xl leading-[30px]">
+      <p className="mt-2  max-w-3xl ">
         In our relentless pursuit of excellence, ChES has achieved significant
         milestones along its journey. These accomplishments are a testament to
         the dedication of our determined team members, the unwavering support

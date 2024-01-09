@@ -114,7 +114,7 @@ export const events = [
 export const Achievements = [
   {
     content:
-      "ChES SVNIT achieved the AIChE Global Outstanding Student Chapter Award for the third consecutive year (2022-23). The award is given annually to Student Chapters demonstrating outstanding participation, enthusiasm, program quality and professionalism.",
+      "ChES SVNIT achieved the AIChE Global Outstanding Student Chapter Award for the third consecutive year (2022-23). The award is given to Student Chapters showing outstanding participation, enthusiasm, program quality and professionalism.",
 
     img: aa,
     link: "https://www.aiche.org/community/awards/outstanding-student-chapter-award",
@@ -238,33 +238,33 @@ export const Teams = [
 export const Developers = [
   {
     id: 1,
-    name: "Archit Kulshrestha",
+    name: "Archit",
     Linkedin: "https://www.linkedin.com/in/archit-kulshrestha-1aa01a255/",
   },
   {
     id: 2,
-    name: "Aditya Kumar",
+    name: "Aditya",
     Linkedin: "https://www.linkedin.com/in/adityak1911/",
   },
 
   {
     id: 3,
-    name: "Abhay Dubey",
+    name: "Abhay",
     Linkedin: "https://www.linkedin.com/in/abhay-dubey-480a48264/",
   },
   {
     id: 4,
-    name: "Abhishek Sharma",
+    name: "Abhishek",
     Linkedin: "https://www.linkedin.com/in/abhishek-sharma-38b97125b/",
   },
   {
     id: 5,
-    name: "Shikhar Shukla",
+    name: "Shikhar",
     Linkedin: "https://www.linkedin.com/in/shikhar-shukla-011062256/",
   },
   {
     id: 6,
-    name: "Vivek Prasad",
+    name: "Vivek",
     Linkedin:
       "https://www.linkedin.com/company/chemical-engineering-society-svnit/mycompany/",
   },

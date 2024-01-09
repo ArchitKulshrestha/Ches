@@ -75,7 +75,7 @@ function Event() {
       <div>
         <h2 className={styles.sectionHeadText}>Events.</h2>
 
-        <p className="mt-2 max-w-3xl leading-[30px]">
+        <p className="mt-2 max-w-3xl ">
           At ChES, we are proud to curate a diverse calendar of events that
           ignite the enthusiasm for chemical engineering and nurture an
           innovative spirit. Annually, our society organizes a variety of
