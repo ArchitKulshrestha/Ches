@@ -16,6 +16,14 @@ import car from "./car.png";
 import dhyey from "./dhyey.png";
 import Alchemy from "./Alchemy.png";
 import EurekaHome from "./Home-image.png";
+import aa from "./aa.png";
+import ab from "./ab.png";
+import ac from "./ac.png";
+import ad from "./ad.png";
+import ae from "./ae.png";
+import af from "./af.png";
+import ag from "./ag.png";
+import TimelineWebsite from "./TimelineWebsite.png";
 export {
   Eureka,
   ChesLogo,
@@ -34,4 +42,12 @@ export {
   dhyey,
   Alchemy,
   EurekaHome,
+  aa,
+  ab,
+  ac,
+  ad,
+  ae,
+  af,
+  ag,
+  TimelineWebsite,
 };

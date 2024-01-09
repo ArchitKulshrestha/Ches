@@ -1,24 +1,27 @@
 /* eslint-disable react-refresh/only-export-components */
 import { Teams } from "../Constants/index";
 import Tilt from "react-parallax-tilt";
-import { fadeIn, textVariant } from "../utils/motion";
-import { motion } from "framer-motion";
+
 import { FaLinkedin } from "react-icons/fa";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import FacultyCard from "./FacultyCard";
+import { TimelineWebsite } from "../assets";
 
 function Team() {
   return (
     <>
       <h2 className={styles.sectionHeadText}>The Team.</h2>
 
-      <p className="mt-4  max-w-3xl leading-[30px]">
-        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      </p>
       <FacultyCard />
+      <div className=" h-[50dvh] mt-8  ">
+        <img
+          src={TimelineWebsite}
+          alt="Team-Image"
+          border="0"
+          className="w-full h-full bg-center  bg-no-repeat object-contain rounded-xl overflow-hidden"
+        />
+      </div>
 
       <h2 className={"text-4xl font-semibold mt-10 mb-5"}>Committee</h2>
 

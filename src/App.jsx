@@ -13,7 +13,7 @@ import {
 function App() {
   return (
     <>
-      <div className="text-text-100 bg-gradient-to-tr from-[#110514] to-[#220a29] font-OpenSans">
+      <div className="text-text-100 bg-background-950 font-OpenSans">
         <NavBar />
         <div className=" bg-herobgMobile sm:bg-herobg bg-cover bg-no-repeat bg-center">
           <Home />
@@ -23,7 +23,6 @@ function App() {
         <Acievement />
         <Team />
         <Developer />
-
         <Contact />
         <Footer />
       </div>

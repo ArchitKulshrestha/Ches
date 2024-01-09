@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react-refresh/only-export-components */
 
-import { motion } from "framer-motion";
 import { styles } from "../styles";
 import Tilt from "react-parallax-tilt";
-import { fadeIn, textVariant } from "../utils/motion";
+//import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 //import { ChesLogo } from "../assets";
 import { events } from "../Constants";
@@ -32,7 +31,7 @@ const EventCard = ({ content, title, img, index, link }) => {
             />
 
             <p className="text-text-300 text-center mt-4 font-semibold">
-              Explore
+              <h9>Explore</h9>
             </p>
           </div>
         </div>{" "}
@@ -76,12 +75,16 @@ function Event() {
       <div>
         <h2 className={styles.sectionHeadText}>Events.</h2>
 
-        <p className="mt-4  max-w-3xl leading-[30px]">
-          lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud
+        <p className="mt-2 max-w-3xl leading-[30px]">
+          At ChES, we are proud to curate a diverse calendar of events that
+          ignite the enthusiasm for chemical engineering and nurture an
+          innovative spirit. Annually, our society organizes a variety of
+          engaging activities, with flagship events such as SIPHON, ALCHEMY, and
+          EUREKA taking center stage. The remaining year is filled with
+          workshops, industrial visits, Chem-E-Car Competitions, and numerous
+          K-12 activities.
         </p>
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Open the modal using document.getElementById('ID').showModal() method */}
           {events.map((event, index) => (
             <EventCard key={index} index={index} {...event} />

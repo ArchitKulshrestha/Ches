@@ -8,13 +8,6 @@ import {
   K12,
   uphoto,
   Alchemy,
-  aa,
-  ab,
-  ac,
-  ad,
-  ae,
-  af,
-  ag,
 } from "../assets";
 
 export const NavLinks = [
@@ -114,51 +107,51 @@ export const events = [
 export const Achievements = [
   {
     content:
-      "ChES SVNIT achieved the AIChE Global Outstanding Student Chapter Award for the third consecutive year (2022-23). The award is given annually to Student Chapters demonstrating outstanding participation, enthusiasm, program quality and professionalism.",
+      "ChES SVNIT won the Outstanding Student Chapter Award for the Third consecutive year 2022-23 from AIChE global, this award is presented annually to those Student Chapters that show an exceptional level of participation, enthusiasm, program quality, professionalism, and involvement in the university and community.",
 
-    img: aa,
-    link: "https://www.aiche.org/community/awards/outstanding-student-chapter-award",
+    img: SVNITLOGO,
+    link:"https://www.aiche.org/community/awards/outstanding-student-chapter-award"
   },
   {
     content:
-      "Team Matrix of ChES SVNIT had secured the first position in ChemE Jeopardy competition held in Synergicon (SRC 2023) and got opportunity to represent team Matrix of ChES in Annual Student Conference, 2023.",
+      "Team Matrix of ChES SVNIT had secured the first position in ChemE Jeopardy competition held in Synergicon (SRC 2023) organized during 18th August to 20th August 2023 and got opportunity to represent team Matrix of ChES in Annual Student Conference, 2023.",
 
-    img: ab,
-    link: "/",
+    img: ChesLogo,
+    link:"/"
   },
   {
     content:
       "Team Cliff Jumper, represented as the Chem-E-Car team of ChES SVNIT in Synergicon (SRC 2023) and got the opportunity to represent them in Annual Student Conference, 2023.",
 
-    img: ac,
-    link: "/",
+    img: SVNITLOGO,
+    link:"/"
   },
   {
     content:
-      "Mr. Rupesh Yadav, our K-12 Outreach Head, received the Donald F. Othmer Second Year Student Academic Excellence Award from our Student Chapter. This prestigious recognition acknowledges his outstanding performance and significant contributions to the Society.",
+      "Mr. Rupesh Yadav a prominent member serving presently as the K-12 Outreach Head, has recieved the honourable award of Donald F. Othmer Second Year Student Academic Excellence Award from our Student Chapter for his excellence performance and contribution towards the Society throughout the year. It is a matter of great pride for the ChES SVNIT Student Chapter.",
 
-    img: ad,
-    link: "https://www.aiche.org/community/awards/donald-f-mildred-topp-othmer-scholarship-awards",
+    img: SVNITLOGO,
+    link:"https://www.aiche.org/community/awards/donald-f-mildred-topp-othmer-scholarship-awards"
   },
   {
     content:
-      "11 members of ChES got selected in the Executive Student Committee (ESC) of AIChE, with Jatin Agarwal as the Global Director for Regional Subcommittee providing a variety of resources and programming opportunities for Student Chapters around the globe.",
+      "11 members of ChES got selected in the Executive Student Committee (ESC) of AIChE, with Jatin Agarwal Serving as the Global Director for Regional Subcommittee. The ESC is the only student-run committee, which seeks to help Student Chapters get the most out of AIChE by providing a variety of resources and programming opportunities for Student Chapter around the globe.",
 
-    img: ae,
-    link: "https://www.aiche.org/community/sites/committees/executive-student",
+    img: SVNITLOGO,
+    link:"https://www.aiche.org/community/sites/committees/executive-student"
   },
   {
     content:
       "The Chem-E-Car of ChES SVNIT Secured Second position in the AZeoRover Competition, at AZeotropy - Asia's largest Chemical Engineering Symposium held on 18th March 2023 at IIT Bombay. ",
 
-    img: af,
-    link: "https://www.azeotropy.org/competitions/azeorover",
+    img: SVNITLOGO,
+    link:"https://www.azeotropy.org/competitions/azeorover"
   },
   {
     content:
       "The Chem-E-Car team of ChES Secured First Position in the Chem-E-Car Competition of MindBend - Gujarat's largest techno-managerial fest held on 31st March 2023. ",
-    img: ag,
-    link: "/",
+    img: ChesLogo,
+    link:"/"
   },
 ];
 export const Teams = [
@@ -283,7 +276,7 @@ export const slides = [
   },
   {
     name: `ChES`,
-    img: ChesLogo,
+    img: `/src/assets/ches-logo.png`,
     content: `The Chemical Engineering Society (ChES) at SVNIT, founded on January 16, 2014, and affiliated with AIChE, promotes knowledge sharing and collaboration among future chemical engineers. It organizes events, seminars, and workshops to foster curiosity and understanding in Chemical Engineering.`,
   },
   {

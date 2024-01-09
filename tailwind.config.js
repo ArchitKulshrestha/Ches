@@ -93,6 +93,7 @@ export default {
       backgroundImage: {
         herobg: "url('/src/assets/herobg.png')",
         herobgMobile: "url('/src/assets/herobgMobile.png')",
+        alumini: "url('/src/assets/TimelineWebsite.png')",
       },
     },
   },
