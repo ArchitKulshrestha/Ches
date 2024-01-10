@@ -28,6 +28,7 @@ const AchievementCard = ({ content, img, link }) => {
           <a
             href={link}
             target="_blank"
+            aria-label="link"
             rel="noopener noreferrer"
             className="absolute bottom-3 left-4 text-text-200 hover:text-accent-400">
             <IoMdLink className="text-3xl" />
