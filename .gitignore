@@ -25,7 +25,7 @@ dist-ssr
 
 .vercel
 vercel.json
-.eslint.cjs
+
 .gitignore
-```
-.vite
+
+.eslintrc.cjs

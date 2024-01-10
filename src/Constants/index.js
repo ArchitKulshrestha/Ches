@@ -114,7 +114,7 @@ export const events = [
 export const Achievements = [
   {
     content:
-      "ChES SVNIT achieved the AIChE Global Outstanding Student Chapter Award for the third consecutive year (2022-23). The award is given to Student Chapters showing outstanding participation, enthusiasm, program quality and professionalism.",
+      "ChES achieved the AIChE Global Outstanding Student Chapter Award for the third consecutive year (2022-23). The award is given to Student Chapters showing outstanding participation, enthusiasm, program quality and professionalism.",
 
     img: aa,
     link: "https://www.aiche.org/community/awards/outstanding-student-chapter-award",
@@ -135,14 +135,14 @@ export const Achievements = [
   },
   {
     content:
-      "Mr. Rupesh Yadav, our K-12 Outreach Head, received the Donald F. Othmer Second Year Student Academic Excellence Award from our Student Chapter. This prestigious recognition acknowledges his outstanding performance and significant contributions to the Society.",
+      "Mr. Rupesh Yadav, our K-12 Outreach Head, received the Donald F. Othmer Second Year Student Academic Excellence Award.This prestigious recognition acknowledges his outstanding performance.",
 
     img: ad,
     link: "https://www.aiche.org/community/awards/donald-f-mildred-topp-othmer-scholarship-awards",
   },
   {
     content:
-      "11 members of ChES got selected in the Executive Student Committee (ESC) of AIChE, with Jatin Agarwal as the Global Director for Regional Subcommittee providing a variety of resources and programming opportunities for Student Chapters around the globe.",
+      "11 members of ChES got selected in the Executive Student Committee (ESC) of AIChE, with Jatin Agarwal as the Global Director for Regional Subcommittee providing a variety of resources and programming opportunities.",
 
     img: ae,
     link: "https://www.aiche.org/community/sites/committees/executive-student",

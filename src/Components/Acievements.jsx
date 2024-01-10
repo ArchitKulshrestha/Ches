@@ -20,7 +20,7 @@ const AchievementCard = ({ content, img, link }) => {
           <img
             src={img}
             alt="About Icon"
-            className=" h-[14rem] rounded-2xl object-contain my-4"
+            className=" h-[14rem] rounded-2xl object-contain mb-2 mt-4"
           />{" "}
           <div className="w-full text-left mt-2">
             <h3 className="text-sm">{content}</h3>
