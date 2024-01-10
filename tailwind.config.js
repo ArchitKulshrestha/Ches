@@ -91,9 +91,9 @@ export default {
         NotoSans: ["Noto Sans", " sans-serif"],
       },
       backgroundImage: {
-        herobg: "url('/src/assets/herobg.png')",
-        herobgMobile: "url('/src/assets/herobgMobile.png')",
-        alumini: "url('/src/assets/TimelineWebsite.png')",
+        herobg: "url('/src/assets/herobg.webp')",
+        herobgMobile: "url('/src/assets/herobgMobile.webp')",
+        alumini: "url('/src/assets/TimelineWebsite.webp')",
         aluminiMobile: "url('/src/assets/TimelineMobile.webp')",
       },
     },
