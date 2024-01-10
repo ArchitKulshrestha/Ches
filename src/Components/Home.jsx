@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <section className="relative w-full h-[88dvh] mx-auto">
+      <section className="relative w-full h-[88vh] mx-auto">
         <div className="absolute top-[7rem] w-full">
           <motion.div variants={fadeIn("right", "tween ", 0.3, 0.4)}>
             <h3 className="text-text-100 font-bold md:text-[75px] sm:text-[60px] text-[55px] font-OpenSans">
