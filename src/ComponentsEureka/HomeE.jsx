@@ -1,9 +1,10 @@
 /* eslint-disable react-refresh/only-export-components */
 import { SectionWrapper } from "../hoc";
+import { useState } from "react";
 
 // import { motion } from "framer-motion";
 // import { fadeIn, textVariant } from "../utils/motion";
-import { Link } from "react-router-dom";
+
 
 import { EurekaHome } from "../assets";
 
@@ -14,8 +15,11 @@ function HomeE() {
   const Upload_file = () => {
     <Link to="/Upload"></Link>;
   };
+  
 
   return (
+    
+
     <>
       <section className="relative w-full mx-auto min-h-screen overflow-hidden ">
         <div className="w-full flex flex-col sm:flex-row justify-between items-center mt-[2rem]">
@@ -33,6 +37,8 @@ function HomeE() {
             className=" mt-6 w-[22rem] h-[15rem] em:h-[15rem] em:w-[18rem] emobile:w-[15rem] emobile:h-[12rem] es:w-[12rem] es:h-[8rem]"
           />
         </div>
+       
+
         <div className="flex justify-center sm:justify-start items-center ">
           {sessionStorage.getItem("token") && (
             <div className="flex gap-4 mt-4">
@@ -52,6 +58,12 @@ function HomeE() {
               </Link>
             </div>
           )}
+        </div>
+        <div>
+          
+          
+
+          
         </div>
         <div className="relative w-full flex flex-col align-center items-center mt-[2rem]">
           <div className="text-[2rem] font-openSans mx-auto mb-[0.5rem] items-center">

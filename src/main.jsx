@@ -10,6 +10,8 @@ import Login from "./ComponentsEureka/Login.jsx";
 import "./index.css";
 import PortalUploadPage from "./ComponentsEureka/PortalUploadPage.jsx";
 import ApiComponent from "./ComponentsEureka/ApiComponent.jsx";
+import Eureka1 from "./ComponentsEureka/Eureka1.jsx";
+import Layout from "./ComponentsEureka/Layout.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -17,10 +19,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="eureka" element={<AppEureka />} />
+          
           <Route path="Upload" element={<PortalUploadPage />} />
           <Route path="login" element={<Login />} />
           <Route path="data" element={<ApiComponent />} />
+          <Route path="eureka" element={<Layout />} >
+          <Route  index element={<AppEureka />}/>
+        <Route path="Eureka1" element={<Eureka1 />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </AuthProvider>

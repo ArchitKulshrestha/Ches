@@ -1,16 +1,36 @@
-/* eslint-disable react-refresh/only-export-components */
 import { Link } from "react-router-dom";
 import { Eureka } from "../assets";
+import { useState, useEffect, useRef } from "react";
 
 function NavBar() {
-  const handleSignOut = () => {
-    sessionStorage.removeItem("token");
-    window.location.href = "/eureka";
+  const [isOpen, setIsOpen] = useState(false);
+  const [dropdownRef, setDropdownRef] = useState(null);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
   };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef && !dropdownRef.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    const handleGlobalClick = (event) => {
+      handleClickOutside(event);
+    };
+
+    document.addEventListener('click', handleGlobalClick);
+
+    return () => {
+      document.removeEventListener('click', handleGlobalClick);
+    };
+  }, [dropdownRef]);
 
   return (
     <>
-      <header className="w-full flex items-center py-3 fixed top-0 z-30 border-b-[0px] drop-shadow-md backdrop-blur-[10px] bg-background-900/70 ">
+      <header className="w-full flex items-center py-3 fixed top-0 z-30 border-b-[0px] drop-shadow-md backdrop-blur-[10px] bg-background-900/70">
         <nav className="w-full flex justify-between items-center max-w-7xl mx-auto px-4">
           <a href="/eureka">
             <img
@@ -20,12 +40,27 @@ function NavBar() {
             />
           </a>
 
-          <ul className="list-none  md:flex flex-row gap-8">
+          <div className="dropdown" ref={(node) => setDropdownRef(node)}>
+            <button onClick={toggleDropdown} className="border-2 border-background-300/50 py-2 px-4 rounded-xl outline-none w-45 text-text-100 font-bold shadow-md hover:bg-secondary-800"> Eureka Archives</button>
+            {isOpen && (
+              <div className="absolute mt-2  border-background-300/50 shadow-lg rounded-md py-2 w-45  ">
+                <Link to="./Eureka1">
+                  <button className="block text-text-100 font-bold hover:bg-secondary-800 mx-auto">Eureka 1.0</button>
+                </Link>
+                <Link>
+                <button className="block text-text-100 font-bold hover:bg-secondary-800 mx-auto">Eureka 2.0</button>
+                </Link>
+              </div>
+            )}
+          </div>
+
+          <ul className="list-none md:flex flex-row gap-8">
             {sessionStorage.getItem("token") ? (
               <Link to="/eureka">
                 <button
                   className="border-2 border-background-300/50 py-2 px-4 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800"
-                  onClick={handleSignOut}>
+                  onClick={handleSignOut}
+                >
                   LogOut
                 </button>
               </Link>
@@ -42,4 +77,5 @@ function NavBar() {
     </>
   );
 }
+
 export default NavBar;
