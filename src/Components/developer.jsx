@@ -24,7 +24,8 @@ function Developer() {
                 <a
                   href={`${developer.Linkedin}`}
                   target="_blank"
-                  rel="noreferrer">
+                  rel="noreferrer"
+                  aria-label="linkedIn">
                   <FaLinkedin className="text-2xl text-text-200 hover:text-accent-400 mt-4" />
                 </a>
               </div>

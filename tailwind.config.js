@@ -4,16 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundClip: ["hover", "focus"],
-      screens: {
-        about_width: { min: "600px", max: "1390px" },
-        about_width_mobile: { max: "600px" },
-        about_width_font: { max: "460px" },
-        about_width_logo: { min: "640px", max: "1140px" },
-        about_width_logo_mobile: { min: "450px", max: "640px" },
-        about_width_logo_mobile_small: { max: "450px" },
-        em: { min: "550px", max: "730px" },
-        emobile: { min: "490px", max: "550px" },
-        es: { max: "490px" },
+      aspectRatio: {
+        "4/3": "4/3",
       },
       colors: {
         text: {
@@ -91,9 +83,10 @@ export default {
         NotoSans: ["Noto Sans", " sans-serif"],
       },
       backgroundImage: {
-        herobg: "url('/src/assets/herobg.png')",
-        herobgMobile: "url('/src/assets/herobgMobile.png')",
-        alumini: "url('/src/assets/TimelineWebsite.png')",
+        herobg: "url('/src/assets/herobg.webp')",
+        herobgMobile: "url('/src/assets/herobgMobile.webp')",
+        alumini: "url('/src/assets/TimelineWebsite.webp')",
+        aluminiMobile: "url('/src/assets/TimelineMobile.webp')",
       },
     },
   },

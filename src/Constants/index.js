@@ -114,7 +114,7 @@ export const events = [
 export const Achievements = [
   {
     content:
-      "ChES SVNIT achieved the AIChE Global Outstanding Student Chapter Award for the third consecutive year (2022-23). The award is given to Student Chapters showing outstanding participation, enthusiasm, program quality and professionalism.",
+      "ChES achieved the AIChE Global Outstanding Student Chapter Award for the third consecutive year (2022-23). The award is given to Student Chapters showing outstanding participation, enthusiasm, program quality and professionalism.",
 
     img: aa,
     link: "https://www.aiche.org/community/awards/outstanding-student-chapter-award",
@@ -135,14 +135,14 @@ export const Achievements = [
   },
   {
     content:
-      "Mr. Rupesh Yadav, our K-12 Outreach Head, received the Donald F. Othmer Second Year Student Academic Excellence Award from our Student Chapter. This prestigious recognition acknowledges his outstanding performance and significant contributions to the Society.",
+      "Mr. Rupesh Yadav, our K-12 Outreach Head, received the Donald F. Othmer Second Year Student Academic Excellence Award.This prestigious recognition acknowledges his outstanding performance.",
 
     img: ad,
     link: "https://www.aiche.org/community/awards/donald-f-mildred-topp-othmer-scholarship-awards",
   },
   {
     content:
-      "11 members of ChES got selected in the Executive Student Committee (ESC) of AIChE, with Jatin Agarwal as the Global Director for Regional Subcommittee providing a variety of resources and programming opportunities for Student Chapters around the globe.",
+      "11 members of ChES got selected in the Executive Student Committee (ESC) of AIChE, with Jatin Agarwal as the Global Director for Regional Subcommittee providing a variety of resources and programming opportunities.",
 
     img: ae,
     link: "https://www.aiche.org/community/sites/committees/executive-student",
@@ -274,7 +274,7 @@ export const slides = [
   {
     name: `SVNIT`,
     img: SVNITLOGO,
-    content: `Sardar Vallabhbhai National Institute of Technology (SVNIT) is a public technical university located in Surat, Gujarat, India. It was established in 1961 as one of the Regional Engineering Colleges (RECs) and was later declared a "Deemed University" under the University Grants Commission Act, of 1956. In 2007, it was granted the status of an "Institute of National Importance." SVNIT offers undergraduate courses in Civil, Mechanical, Electrical, Electronics, Computer, Production, and Chemical Engineering undergraduate programs. It also provides postgraduate programs, M.Sc. programs, and a doctoral program in various branches of engineering.`,
+    content: `Sardar Vallabhbhai National Institute of Technology (SVNIT) in Surat, Gujarat, India, established in 1961 as a Regional Engineering College (REC), gained "Institute of National Importance" status in 2007. It offers undergraduate programs in Civil, Mechanical, Electrical, Electronics, Computer, Production, and Chemical Engineering, along with postgraduate, M.Sc., and doctoral programs in various engineering disciplines.`,
   },
   {
     name: `AIChE`,
@@ -289,11 +289,11 @@ export const slides = [
   {
     name: `Mission`,
     img: ChesLogo,
-    content: `ChES is dedicated to simplifying technical complexities for public understanding, promoting excellence in chemical engineering, and encouraging the exchange of ideas. We actively contribute to societal progress by sharing knowledge on diverse technical issues, empowering individuals to make informed decisions. Through a comprehensive approach, ChES seeks to bridge the gap between the technical realm and the broader community, playing a pivotal role in advancing both awareness and solutions in the field of chemical engineering.`,
+    content: `ChES simplifies technical complexities for public understanding, promotes excellence in chemical engineering, and contributes to societal progress by sharing knowledge and empowering informed decisions. Bridging the gap between the technical realm and the broader community, ChES plays a pivotal role in advancing awareness and solutions in chemical engineering.`,
   },
   {
     name: `Vision`,
     img: ChesLogo,
-    content: `ChES envisions becoming a catalyst for excellence in chemical engineering at SVNIT by promoting a united community. Our vision is to dedicate ourselves to advancing knowledge, sharing experiences, and collectively addressing technical challenges. We aim to promote a culture of open dialogue, effective problem-solving, and active community engagement. Crucially, we strive to ensure that the impact of chemical engineering extends beyond academia, addressing real-world challenges and contributing positively to global progress.`,
+    content: `ChES, the Student Technical Club at SVNIT, aims to catalyze excellence in chemical engineering. Our focus includes advancing knowledge, addressing technical challenges, and promoting community engagement. We strive to extend the impact of chemical engineering beyond academia, contributing to real-world challenges and global progress.`,
   },
 ];

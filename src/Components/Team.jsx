@@ -6,7 +6,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import FacultyCard from "./FacultyCard";
-import { TimelineWebsite } from "../assets";
 
 function Team() {
   return (
@@ -14,14 +13,7 @@ function Team() {
       <h2 className={styles.sectionHeadText}>The Team.</h2>
 
       <FacultyCard />
-      <div className=" h-[50dvh] mt-8  ">
-        <img
-          src={TimelineWebsite}
-          alt="Team-Image"
-          border="0"
-          className="w-full h-full bg-center  bg-no-repeat object-contain rounded-xl overflow-hidden"
-        />
-      </div>
+      <div className="h-screen sm:h-[50vh] w-full mt-8 bg-contain bg-center bg-no-repeat bg-aluminiMobile sm:bg-alumini"></div>
 
       <h2 className={"text-4xl font-semibold mt-10 mb-5"}>Committee</h2>
 
@@ -38,7 +30,11 @@ function Team() {
                 <div className=" font-semibold text-lg ">{team.name}</div>
                 <div className="text-md py-2">{team.Head}</div>
 
-                <a href={`${team.Linkedin}`} target="_blank" rel="noreferrer">
+                <a
+                  href={`${team.Linkedin}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="linkedIn">
                   <FaLinkedin className="text-2xl text-text-200 hover:text-accent-400" />
                 </a>
               </div>
