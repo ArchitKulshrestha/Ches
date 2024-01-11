@@ -22,6 +22,7 @@ import ad from "./ad.webp";
 import ae from "./ae.webp";
 import af from "./af.webp";
 import ag from "./ag.webp";
+import heroimage from "./heroimage.png";
 
 export {
   Eureka,
@@ -48,4 +49,5 @@ export {
   ae,
   af,
   ag,
+  heroimage,
 };
