@@ -43,7 +43,7 @@ function NavBar() {
             <div
               className={`${
                 !toggle ? "hidden" : "flex"
-              } p-8  absolute top-[5rem] right-0  my-2 w-full text-center z-10 rounded-md h-screen drop-shadow-md  bg-background-900/90  `}>
+              } p-8  absolute top-[4.5rem] right-0  my-2 w-full text-center z-10 rounded-md h-screen drop-shadow-md  bg-background-900 `}>
               <ul className="list-none flex  items-start  flex-col gap-4 mt-4 px-4">
                 {NavLinks.map((link) => (
                   <li
