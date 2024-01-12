@@ -1,4 +1,4 @@
-import ChesLogo from "./ches-logo.webp";
+import ChesLogo from "./ches-logo.png";
 import SVNITLOGO from "./svnit-logo.webp";
 import menu from "./menu.svg";
 import close from "./close.svg";

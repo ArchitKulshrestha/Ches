@@ -44,7 +44,7 @@ const Achievement = () => {
     <section>
       <h2 className={styles.sectionHeadText}>Achievements.</h2>
 
-      <p className="mt-2  max-w-3xl ">
+      <p className="mt-2  text-justify ">
         In our relentless pursuit of excellence, ChES has achieved significant
         milestones along its journey. These accomplishments are a testament to
         the dedication of our determined team members, the unwavering support

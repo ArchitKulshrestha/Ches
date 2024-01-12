@@ -13,21 +13,17 @@ import { slides } from "../Constants";
 
 const AboutCard = ({ name, content, img }) => {
   return (
-    <div className="min-h-[60vh] px-4 sm:px-6  rounded-2xl py-12 overflow-hidden bg-background-900/70 ">
-      <div className="flex sm:flex-row flex-col w-full justify-between gap-y-4">
+    <div className="min-h-[50vh] px-4 sm:px-6  rounded-2xl py-12 overflow-hidden bg-background-900/70 ">
+      <div className="flex sm:flex-row flex-col w-full justify-between gap-y-4 items-center">
         <div>
           <h3 className="sm:text-5xl text-3xl font-bold">{name}</h3>
         </div>
         <div>
-          <img
-            src={img}
-            alt="About Icon"
-            className=" h-[4rem] sm:w-[14rem] aspect-4/3  object-contain "
-          />
+          <img src={img} alt="About Icon" className=" h-20 object-contain" />
         </div>
       </div>
       <div>
-        <p className="mt-8 text-base sm:text-xl text-text-100  max-w-3xl ">
+        <p className="mt-6 text-left text-base sm:text-xl text-text-100  max-w-3xl">
           {content}
         </p>
       </div>

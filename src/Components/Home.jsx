@@ -35,13 +35,7 @@ function Home() {
                 />
               </div>
             </div>
-            <div className="sm:w-[40%] w-full flex justify-center items-center">
-              <img
-                src={heroimage}
-                alt="Home-image"
-                className="sm:h-[30rem] h-[18rem] object-contain object-center "
-              />
-            </div>
+         
           </motion.div>
         </div>
       </section>

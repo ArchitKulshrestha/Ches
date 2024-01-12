@@ -9,13 +9,13 @@ function NavBar() {
 
   return (
     <>
-      <header className="w-full flex items-center py-3 fixed top-0 z-30 border-b-[0px] drop-shadow-md backdrop-blur-[10px] bg-background-900/70 ">
-        <nav className="w-full flex justify-between items-center max-w-7xl mx-auto px-4">
+      <header className="w-full h-[90px] flex items-center py-3 fixed top-0 z-30 border-b-[0px] drop-shadow-md backdrop-blur-[10px] bg-background-900/70 ">
+        <nav className="w-full flex justify-between items-center max-w-7xl mx-auto px-4 ">
           <a href="/">
             <img
               src={ChesLogo}
               alt="Logo"
-              className="w-[7.5rem] h-[3.75rem] sm:w-[8rem] sm:h-[4rem] hover:scale-105 duration-300"
+              className="h-16 hover:scale-105 duration-300"
             />
           </a>
 
