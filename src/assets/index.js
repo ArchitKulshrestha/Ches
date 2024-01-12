@@ -1,4 +1,4 @@
-import ChesLogo from "./ches-logo.png";
+import ChesLogo from "./ches-logo.webp";
 import SVNITLOGO from "./svnit-logo.webp";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -22,7 +22,7 @@ import ad from "./ad.webp";
 import ae from "./ae.webp";
 import af from "./af.webp";
 import ag from "./ag.webp";
-import teamImg from "./teamImg.jpg";
+import teamImg from "./teamImg.webp";
 import Alchemylogo from "./Alchemylogo.webp";
 import K12logo from "./K12logo.webp";
 import SIPHONlogo from "./SIPHONlogo.webp";
