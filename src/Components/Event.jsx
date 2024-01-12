@@ -38,7 +38,7 @@ const EventCard = ({ content, title, img, index, link }) => {
       </Tilt>
       <dialog
         id={`my_modal_${index}`}
-        className=" top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] drop-shadow-md backdrop-blur-[10px] bg-background-800/70 rounded-[20px] py-8 px-4 sm:w-1/2 w-full ">
+        className=" top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] drop-shadow-md backdrop-blur-[10px] bg-background-800/70 rounded-[20px] py-8 px-4 sm:w-1/2 w-full">
         <div className="modal-box">
           <div className="flex gap-4 flex-wrap">
             <div>
