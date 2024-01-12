@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 //import { ChesLogo } from "../assets";
 import { events } from "../Constants";
 
-const EventCard = ({ content, title, img, index, link }) => {
+const EventCard = ({ content, title, img,inside_img, index, link }) => {
   return (
     <>
       <Tilt
@@ -23,9 +23,9 @@ const EventCard = ({ content, title, img, index, link }) => {
           }>
           <h1 className="text-3xl  font-semibold"> {title}</h1>
 
-          <div className="  rounded-[20px] py-5 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
+          <div className="  rounded-[20px] py-7 px-1 min-h-[280px] flex justify-evenly items-center flex-col">
             <img
-              src={img}
+              src={inside_img}
               alt="About Icon"
               className="h-[16rem] object-cover   overflow-hidden  rounded-xl "
             />
@@ -41,8 +41,18 @@ const EventCard = ({ content, title, img, index, link }) => {
         className=" top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] drop-shadow-md backdrop-blur-[10px] bg-background-800/70 rounded-[20px] py-8 px-4 sm:w-1/2 w-full ">
         <div className="modal-box">
           <div className="flex gap-4 flex-wrap">
+          
             <div>
               <h3 className="text-3xl text-text-200 font-semibold">{title}</h3>
+              <div className="  rounded-[20px] py-9 px-10 min-h-[300px] flex justify-evenly items-center flex-col">
+            <img
+              src={img}
+              alt="About Icon"
+              className="h-[16rem] object-cover   overflow-hidden  rounded-xl "
+            />
+
+       
+          </div> 
               <p className="py-4 text-[14px] sm:text-lg text-text-100 font-semibold">
                 {content}
               </p>
