@@ -6,7 +6,7 @@ import { SectionWrapper } from "../hoc";
 
 function Developer() {
   return (
-    <>
+    <section>
       <h2 className={"text-4xl font-semibold  mb-5"}>Developers</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  gap-4">
@@ -33,7 +33,7 @@ function Developer() {
           </Tilt>
         ))}
       </div>
-    </>
+    </section>
   );
 }
 

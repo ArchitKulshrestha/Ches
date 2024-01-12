@@ -65,7 +65,7 @@ const EventCard = ({ content, title, img, inside_img, index, link }) => {
 
 function Event() {
   return (
-    <>
+    <section>
       <div>
         <h2 className={styles.sectionHeadText}>Events.</h2>
 
@@ -85,7 +85,7 @@ function Event() {
           ))}
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

@@ -10,11 +10,12 @@ import { teamImg } from "../assets";
 
 function Team() {
   return (
-    <>
+    <section>
       <h2 className={styles.sectionHeadText}>The Team.</h2>
       <div className="w-full mt-8 ">
         <img
           src={teamImg}
+          alt="team"
           className="h-[50vh] object-center rounded-md w-full object-cover"
         />
       </div>
@@ -49,7 +50,7 @@ function Team() {
           </Tilt>
         ))}
       </div>
-    </>
+    </section>
   );
 }
 
