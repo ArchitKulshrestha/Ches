@@ -22,8 +22,14 @@ import ad from "./ad.webp";
 import ae from "./ae.webp";
 import af from "./af.webp";
 import ag from "./ag.webp";
-import heroimage from "./heroimage.png";
-
+import teamImg from "./teamImg.jpg";
+import Alchemylogo from "./Alchemylogo.webp";
+import K12logo from "./K12logo.webp";
+import SIPHONlogo from "./SIPHONlogo.webp";
+import Workshoplogo from "./Workshoplogo.webp";
+import car_logo from "./car_logo.webp";
+import SRClogo from "./SRClogo.webp";
+import Eurekalogo from "./Eurekalogo.webp";
 export {
   Eureka,
   ChesLogo,
@@ -49,5 +55,12 @@ export {
   ae,
   af,
   ag,
-  heroimage,
+  Alchemylogo,
+  K12logo,
+  SIPHONlogo,
+  Workshoplogo,
+  car_logo,
+  SRClogo,
+  Eurekalogo,
+  teamImg,
 };

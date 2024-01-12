@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import Typewriter from "typewriter-effect";
 import { SectionWrapper } from "../hoc";
-import { heroimage } from "../assets";
+
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 
@@ -35,7 +35,6 @@ function Home() {
                 />
               </div>
             </div>
-         
           </motion.div>
         </div>
       </section>

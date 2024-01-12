@@ -33,7 +33,7 @@ function Footer() {
               className=" h-20 w-36"
             />
             <p className="mt-4">
-              AIChE ChES <br /> Sardar Vallabhbhai National Institute of
+             Sardar Vallabhbhai National Institute of
               Technology, Surat
             </p>
           </div>

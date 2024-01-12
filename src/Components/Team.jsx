@@ -6,11 +6,18 @@ import { FaLinkedin } from "react-icons/fa";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import FacultyCard from "./FacultyCard";
+import { teamImg } from "../assets";
 
 function Team() {
   return (
     <>
       <h2 className={styles.sectionHeadText}>The Team.</h2>
+      <div className="w-full mt-8 ">
+        <img
+          src={teamImg}
+          className="h-[50vh] object-center rounded-md w-full object-cover"
+        />
+      </div>
 
       <FacultyCard />
       <div className="h-screen sm:h-[50vh] w-full mt-8 bg-contain bg-center bg-no-repeat bg-aluminiMobile sm:bg-alumini"></div>

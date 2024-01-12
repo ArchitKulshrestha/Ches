@@ -8,59 +8,53 @@ import { SectionWrapper } from "../hoc";
 //import { ChesLogo } from "../assets";
 import { events } from "../Constants";
 
-const EventCard = ({ content, title, img, index, link }) => {
+const EventCard = ({ content, title, img, inside_img, index, link }) => {
   return (
     <>
       <Tilt
-        tiltMaxAngleX={10}
-        scale={1.02}
-        tiltMaxAngleY={10}
-        transitionSpeed={1950}>
+        tiltMaxAngleX={5}
+        tiltMaxAngleY={5}
+        transitionSpeed={2000}
+        scale={1.01}>
         <div
-          className="w-[98%] sm:w-[350px] hover:shadow-lg hover:shadow-text-500/60  backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-4 px-4 min-h-[300px]    cursor-pointer"
           onClick={() =>
             document.getElementById(`my_modal_${index}`).showModal()
           }>
-          <h1 className="text-3xl  font-semibold"> {title}</h1>
-
-          <div className="  rounded-[20px] py-5 px-6 min-h-[280px] flex justify-evenly items-center flex-col">
+          <div className="flex flex-col items-start justify-center bg-background-900 rounded-xl cursor-pointer py-4 px-2 sm:px-6 hover:shadow-lg hover:shadow-text-500/60">
+            <h1 className={"text-2xl sm:text-3xl font-semibold mb-4"}>
+              {title}
+            </h1>
             <img
-              src={img}
-              alt="About Icon"
-              className="h-[16rem] object-cover   overflow-hidden  rounded-xl "
+              className="sm:h-40 w-full rounded-xl  "
+              src={inside_img}
+              alt={title}
             />
-
-            <p className="text-text-300 text-center mt-4 font-semibold">
-              <h9>Explore</h9>
-            </p>
           </div>
-        </div>{" "}
+        </div>
       </Tilt>
       <dialog
         id={`my_modal_${index}`}
-        className=" top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] drop-shadow-md backdrop-blur-[10px] bg-background-800/70 rounded-[20px] py-8 px-4 sm:w-1/2 w-full">
+        className="px-6 py-4 rounded-2xl top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] drop-shadow-md backdrop-blur-[10px]  bg-background-800/80 w-full sm:w-[75%]  ">
         <div className="modal-box">
-          <div className="flex gap-4 flex-wrap">
+          <div className="flex md:flex-row flex-col gap-x-8 gap-y-2 justify-between">
+            <img className="md:h-[25rem] rounded-xl h-[18rem]" src={img} />
             <div>
-              <h3 className="text-3xl text-text-200 font-semibold">{title}</h3>
-              <p className="py-4 text-[14px] sm:text-lg text-text-100 font-semibold">
-                {content}
-              </p>
-              <a
-                className="text-text-300 hover:text-accent-400 my-2"
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer">
-                Know More
-              </a>
+              <h3 className="text-base md:text-xl text-text-200">{content}</h3>
             </div>
           </div>
-          <div className="modal-action">
-            <form method="dialog">
+          <div className="modal-action mt-4">
+            <form method="dialog" className="flex flex-wrap">
               {/* if there is a button in form, it will close the modal */}
-              <button className="bg-secondary-800 py-2 mt-3 px-5 rounded-xl outline-none  text-text-100 font-bold shadow-md hover:bg-secondary-700 border-2 border-secondary-500">
+              <button className="bg-transparent py-2 mr-3 mt-3 px-5 rounded-xl outline-none  text-text-100 font-bold shadow-md hover:bg-secondary-700 border-2 border-secondary-500">
                 Close
               </button>
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-secondary-700 py-2 mt-3 px-5 rounded-xl outline-none  text-text-100 font-bold shadow-md hover:bg-secondary-800 border-2 border-secondary-500">
+                Know More
+              </a>
             </form>
           </div>
         </div>
@@ -84,7 +78,7 @@ function Event() {
           workshops, industrial visits, Chem-E-Car Competitions, and numerous
           K-12 activities.
         </p>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Open the modal using document.getElementById('ID').showModal() method */}
           {events.map((event, index) => (
             <EventCard key={index} index={index} {...event} />

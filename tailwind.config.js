@@ -87,6 +87,7 @@ export default {
         herobgMobile: "url('/src/assets/herobgMobile.webp')",
         alumini: "url('/src/assets/TimelineWebsite.webp')",
         aluminiMobile: "url('/src/assets/TimelineMobile.webp')",
+        TeamImg: "url('/src/assets/teamImg.jpg')",
       },
     },
   },
