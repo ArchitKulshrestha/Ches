@@ -252,36 +252,36 @@ export const Teams = [
 export const Developers = [
   {
     id: 1,
-    name: "Archit Kulsrestha",
+    name: "Archit ",
     Linkedin: "https://www.linkedin.com/in/archit-kulshrestha-1aa01a255/",
   },
   {
     id: 2,
-    name: "Aditya Kumar",
+    name: "Aditya ",
     Linkedin: "https://www.linkedin.com/in/adityak1911/",
   },
 
   {
     id: 3,
-    name: "Abhay Dubey",
+    name: "Abhay ",
     Linkedin: "https://www.linkedin.com/in/abhay-dubey-480a48264/",
   },
   {
     id: 4,
-    name: "Abhishek Sharma",
+    name: "Abhishek",
     Linkedin: "https://www.linkedin.com/in/abhishek-sharma-38b97125b/",
   },
   {
     id: 5,
-    name: "Shikhar Shukla",
+    name: "Shikhar ",
     Linkedin: "https://www.linkedin.com/in/shikhar-shukla-011062256/",
   },
-  // {
-  //   id: 6,
-  //   name: "Vivek",
-  //   Linkedin:
-  //     "https://www.linkedin.com/company/chemical-engineering-society-svnit/mycompany/",
-  // },
+  {
+    id: 6,
+    name: "Vivek",
+    Linkedin:
+      "https://www.linkedin.com/company/chemical-engineering-society-svnit/mycompany/",
+  },
 ];
 
 export const slides = [
