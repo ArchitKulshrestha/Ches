@@ -19,7 +19,11 @@ const AboutCard = ({ name, content, img }) => {
           <h3 className="sm:text-5xl text-3xl font-bold">{name}</h3>
         </div>
         <div>
-          <img src={img} alt="About Icon" className=" h-20 object-contain" />
+          <img
+            src={img}
+            alt="About Icon"
+            className=" sm:h-20 h-16 object-contain"
+          />
         </div>
       </div>
       <div>
@@ -42,7 +46,7 @@ function About() {
   };
 
   return (
-    <section className="h-screen py-10">
+    <section className=" py-10">
       <div>
         <h2 className={styles.sectionHeadText}>About.</h2>
       </div>

@@ -84,7 +84,7 @@ function Event() {
           workshops, industrial visits, Chem-E-Car Competitions, and numerous
           K-12 activities.
         </p>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6">
           {/* Open the modal using document.getElementById('ID').showModal() method */}
           {events.map((event, index) => (
             <EventCard key={index} index={index} {...event} />

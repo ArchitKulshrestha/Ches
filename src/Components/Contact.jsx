@@ -27,8 +27,8 @@ function Contact() {
 
     emailjs
       .send(
-        "service_6p2qorf",
-        "template_xpmjy7j",
+        "service_ipyj85c",
+        "template_pzaln2s",
 
         {
           from_name: form.name,
@@ -37,12 +37,12 @@ function Contact() {
           to_email: "archit499kul@gmail.com",
           message: form.message,
         },
-        "hfiF5fVej3ITkNuKZ"
+        "s9ONT6lFbL_3bS2Vl"
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("Thank you. We will get back to you as soon as possible.");
 
           setForm({
             name: "",

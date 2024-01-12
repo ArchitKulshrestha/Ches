@@ -15,7 +15,7 @@ const AchievementCard = ({ content, img, link }) => {
       tiltMaxAngleY={5}
       transitionSpeed={1950}>
       <div className="w-full p-[1px] rounded-[10px] h-[450px]">
-        <div className="w-[98%] sm:w-[380px] hover:shadow-lg hover:shadow-text-500/60 backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-2 px-4 flex flex-col items-center justify-start h-full relative">
+        <div className="w-[98%] sm:w-[360px] hover:shadow-lg hover:shadow-text-500/60 backdrop-blur-[10px] bg-background-900/70 rounded-[20px] py-2 px-4 flex flex-col items-center justify-start h-full relative">
           {" "}
           <img
             src={img}
@@ -51,7 +51,7 @@ const Achievement = () => {
         from our esteemed faculty advisors, and the encouragement received from
         the college administration.
       </p>
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  place-content-center ">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  place-content-center ">
         {Achievements.map((Achievements, index) => (
           <AchievementCard key={index} index={index} {...Achievements} />
         ))}

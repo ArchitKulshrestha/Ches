@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 import { SectionWrapper } from "../hoc";
-import { SVNITLOGO } from "../assets";
+import { ChesLogo } from "../assets";
 import {
   FaFacebook,
   FaInstagram,
@@ -8,7 +8,7 @@ import {
   FaYoutube,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-// import { Developers } from "../Constants";
+
 const year = new Date().getFullYear();
 
 function Footer() {
@@ -27,10 +27,10 @@ function Footer() {
           </div>
           <div className="flex flex-col ">
             <img
-              src={SVNITLOGO}
+              src={ChesLogo}
               alt="CHES-Logo"
               border="0"
-              className="w-20 h-20"
+              className=" h-20 w-36"
             />
             <p className="mt-4">
               AIChE ChES <br /> Sardar Vallabhbhai National Institute of
