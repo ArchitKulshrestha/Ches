@@ -48,7 +48,7 @@ function About() {
   return (
     <section className=" py-10">
       <div>
-        <h2 className={styles.sectionHeadText}>About.</h2>
+        <h1 className={styles.sectionHeadText}>About.</h1>
       </div>
       <Tilt
         tiltMaxAngleX={1}

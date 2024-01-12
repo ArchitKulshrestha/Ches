@@ -64,7 +64,7 @@ function Contact() {
       <section className=" flex xl:flex-row flex-col-reverse gap-10 overflow-hidden sm:w-[60%]">
         <div className="flex-[0.75] bg-background-900/70 backdrop-blur-md py-4 p-2 sm:p-6 rounded-2xl">
           <p className={styles.sectionSubText}>Get in touch</p>
-          <h3 className={styles.sectionHeadText}>Contact.</h3>
+          <h1 className={styles.sectionHeadText}>Contact.</h1>
           <form
             ref={formRef}
             onSubmit={handleSubmit}

@@ -27,7 +27,7 @@ const EventCard = ({ content, title, img, inside_img, index, link }) => {
             <img
               className="sm:h-40 w-full rounded-xl  "
               src={inside_img}
-              alt={title}
+              alt="titleImage"
             />
           </div>
         </div>
@@ -37,7 +37,11 @@ const EventCard = ({ content, title, img, inside_img, index, link }) => {
         className="px-6 py-4 rounded-2xl top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] drop-shadow-md backdrop-blur-[10px]  bg-background-800/80 w-full sm:w-[75%]  ">
         <div className="modal-box">
           <div className="flex md:flex-row flex-col gap-x-8 gap-y-2 justify-between">
-            <img className="md:h-[25rem] rounded-xl h-[18rem]" src={img} />
+            <img
+              className="md:h-[25rem] rounded-xl h-[18rem]"
+              alt="Event Image"
+              src={img}
+            />
             <div>
               <h3 className="text-base md:text-xl text-text-200">{content}</h3>
             </div>
@@ -67,7 +71,7 @@ function Event() {
   return (
     <section>
       <div>
-        <h2 className={styles.sectionHeadText}>Events.</h2>
+        <h1 className={styles.sectionHeadText}>Events.</h1>
 
         <p className="mt-2 text-justify ">
           At ChES, we are proud to curate a diverse calendar of events that

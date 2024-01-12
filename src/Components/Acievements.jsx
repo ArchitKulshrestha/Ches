@@ -42,7 +42,7 @@ const AchievementCard = ({ content, img, link }) => {
 const Achievement = () => {
   return (
     <section>
-      <h2 className={styles.sectionHeadText}>Achievements.</h2>
+      <h1 className={styles.sectionHeadText}>Achievements.</h1>
 
       <p className="mt-2  text-justify ">
         In our relentless pursuit of excellence, ChES has achieved significant

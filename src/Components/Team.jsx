@@ -11,7 +11,7 @@ import { teamImg } from "../assets";
 function Team() {
   return (
     <section>
-      <h2 className={styles.sectionHeadText}>The Team.</h2>
+      <h1 className={styles.sectionHeadText}>The Team.</h1>
       <div className="w-full mt-8 ">
         <img
           src={teamImg}
