@@ -21,9 +21,9 @@ const EventCard = ({ content, title, img, inside_img, index, link }) => {
             document.getElementById(`my_modal_${index}`).showModal()
           }>
           <div className="flex flex-col items-start justify-center bg-background-900 rounded-xl cursor-pointer py-4 px-2 sm:px-6 hover:shadow-lg hover:shadow-text-500/60">
-            <h1 className={"text-2xl sm:text-3xl font-semibold mb-4"}>
+            <h2 className={"text-2xl sm:text-3xl font-semibold mb-4"}>
               {title}
-            </h1>
+            </h2>
             <img
               className="sm:h-40 w-full rounded-xl  "
               src={inside_img}

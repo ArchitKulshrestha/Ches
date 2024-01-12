@@ -16,7 +16,7 @@ const AboutCard = ({ name, content, img }) => {
     <div className="min-h-[50vh] px-4 sm:px-6  rounded-2xl py-12 overflow-hidden bg-background-900/70 ">
       <div className="flex sm:flex-row flex-col w-full justify-between gap-y-4 items-center">
         <div>
-          <h3 className="sm:text-5xl text-3xl font-bold">{name}</h3>
+          <h2 className="sm:text-5xl text-3xl font-bold">{name}</h2>
         </div>
         <div>
           <img
