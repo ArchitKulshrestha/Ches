@@ -3,6 +3,7 @@ import { Eureka } from "../assets";
 import { useState, useEffect, useRef } from "react";
 
 function NavBar() {
+<<<<<<< HEAD
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownRef, setDropdownRef] = useState(null);
 
@@ -28,6 +29,17 @@ function NavBar() {
     };
   }, [dropdownRef]);
 
+=======
+  const token = localStorage.getItem('token')
+  const isLoggedIn = !!token;
+  const handleSignOut = () => {
+    localStorage.removeItem("token");
+    window.location.href = "/eureka";
+  };
+  const Upload_file = () =>{
+    <Link to = "/Upload"></Link>
+  }
+>>>>>>> origin/main
   return (
     <>
       <header className="w-full flex items-center py-3 fixed top-0 z-30 border-b-[0px] drop-shadow-md backdrop-blur-[10px] bg-background-900/70">
@@ -40,6 +52,7 @@ function NavBar() {
             />
           </a>
 
+<<<<<<< HEAD
           <div className="dropdown" ref={(node) => setDropdownRef(node)}>
             <button onClick={toggleDropdown} className="border-2 border-background-300/50 py-2 px-3 rounded-xl outline-none w-45 text-text-100 font-bold shadow-md hover:bg-secondary-800">  Archives</button>
             {isOpen && (
@@ -59,6 +72,25 @@ function NavBar() {
 
           <ul className="list-none md:flex flex-row gap-8">
             {sessionStorage.getItem("token") ? (
+=======
+
+
+          <ul className="list-none  md:flex flex-row gap-8">
+            {isLoggedIn && (
+              <Link to="/Upload">
+        <button
+        className="bg-secondary-600 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800"
+        onClick={Upload_file}>
+  upload
+      </button>
+      </Link>
+      )}
+
+          </ul>
+
+          <ul className="list-none  md:flex flex-row gap-8">
+            {localStorage.getItem("token") ? (
+>>>>>>> origin/main
               <Link to="/eureka">
                 <button
                   className="border-2 border-background-300/50 py-2 px-4 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800"
@@ -75,6 +107,7 @@ function NavBar() {
               </Link>
             )}
           </ul>
+
         </nav>
       </header>
     </>

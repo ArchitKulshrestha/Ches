@@ -86,7 +86,12 @@ function HomeE() {
             Regional Conference.
           </div>
         </div>
+        
       </section>
+      <Link to="/data">
+        <button className='   bg-secondary-600 py-2 px-6 rounded-xl outline-none w-fit text-text-100 font-bold shadow-md hover:bg-secondary-800 ml-2 mt-2' onClick={handleclick}>See Your Content</button>
+       </Link>
+      
     </>
   );
 }
