@@ -19,9 +19,8 @@ function Team() {
           className="h-[50vh] object-center rounded-md w-full object-cover"
         />
       </div>
-
-      <FacultyCard />
       <div className="h-screen sm:h-[50vh] w-full mt-8 bg-contain bg-center bg-no-repeat bg-aluminiMobile sm:bg-alumini"></div>
+      <FacultyCard />
 
       <h2 className={"text-4xl font-semibold mt-10 mb-5"}>Committee</h2>
 

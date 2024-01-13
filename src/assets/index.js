@@ -8,10 +8,11 @@ import Sundar from "./sundar.webp";
 import Eureka from "./Eureka.webp";
 import aiche_logo from "./aiche_logo.webp";
 import SIPHON from "./SIPHON.webp";
+import SRC from "./SRC.webp";
 import Workshop from "./Workshop.webp";
 import K12 from "./K12.webp";
-import uphoto from "./uphoto.webp";
-import car from "./car.webp";
+import uphoto from "./Eureka.webp";
+import car from "./Chem-E-Car.webp";
 import dhyey from "./dhyey.webp";
 import Alchemy from "./Alchemy.webp";
 import EurekaHome from "./Home-image.webp";
@@ -22,7 +23,7 @@ import ad from "./ad.webp";
 import ae from "./ae.webp";
 import af from "./af.webp";
 import ag from "./ag.webp";
-<<<<<<< HEAD
+
 import heroimage from "./heroimage.png";
 import eurekab from "./eurekab.jpeg"
 import eurekac from "./eurekac.jpg"
@@ -34,7 +35,7 @@ import eurekah from "./eurekad.jpeg"
 import eurekae from "./eurekae.jpeg"
 
 
-=======
+
 import teamImg from "./teamImg.webp";
 import Alchemylogo from "./Alchemylogo.webp";
 import K12logo from "./K12logo.webp";
@@ -43,7 +44,7 @@ import Workshoplogo from "./Workshoplogo.webp";
 import car_logo from "./car_logo.webp";
 import SRClogo from "./SRClogo.webp";
 import Eurekalogo from "./Eurekalogo.webp";
->>>>>>> 2d4f78eeda7f560cb847fcdf1c988600616b36fd
+
 export {
   Eureka,
   ChesLogo,
@@ -69,7 +70,7 @@ export {
   ae,
   af,
   ag,
-<<<<<<< HEAD
+
   heroimage,
   eurekab,
   eurekac,
@@ -81,7 +82,7 @@ export {
   eurekah,
   
   
-=======
+
   Alchemylogo,
   K12logo,
   SIPHONlogo,
@@ -90,5 +91,7 @@ export {
   SRClogo,
   Eurekalogo,
   teamImg,
->>>>>>> 2d4f78eeda7f560cb847fcdf1c988600616b36fd
+
+  SRC,
+
 };

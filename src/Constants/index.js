@@ -22,6 +22,7 @@ import {
   Eurekalogo,
   car_logo,
   SRClogo,
+  SRC,
 } from "../assets";
 
 export const NavLinks = [
@@ -103,7 +104,7 @@ export const events = [
   {
     title: "Eureka",
     content:
-      "Spark your scientific curiosity and ignite your research passions with Eureka, the three-month research competition for second-year chemical engineering students. This helps the participants to explore cutting-edge fields like sustainable energy materials, biomanufacturing, or advanced separation technologies. This event brings in teamwork, guided by expert mentors who hone your research skills through five online portals. The journey concludes with a final presentation before professors who serve as judges, with the top three teams emerging as victors. ",
+      "Spark your scientific curiosity and ignite your research passion with Eureka, the three-month research competition for second-year students. This helps the participants to explore cutting-edge fields like sustainable energy materials, biomanufacturing, or advanced separation technologies. This event brings in teamwork, guided by expert mentors who hone your research skills through five online portals. The journey concludes with a final presentation before professors who serve as judges, with the top three teams emerging as victors.",
     img: uphoto,
     inside_img: Eurekalogo,
     link: "/eureka",
@@ -120,7 +121,7 @@ export const events = [
     title: "SRC",
     content:
       "The Student Regional Conference (SRC) is an annual three-day event organized by AIChE Global in fourteen regions worldwide. Through workshops and competitions, it encourages collaboration among AIChE chapters, providing Chemical Engineering students with opportunities to enhance skills, network with industry experts, and showcase talents. Winners can progress to the USA's Annual Student Conference (ASC).",
-    img: K12,
+    img: SRC,
     inside_img: SRClogo,
     link: "https://www.synergiconsrc2023.com/",
   },
