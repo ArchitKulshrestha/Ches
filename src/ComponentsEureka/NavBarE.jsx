@@ -41,14 +41,17 @@ function NavBar() {
           </a>
 
           <div className="dropdown" ref={(node) => setDropdownRef(node)}>
-            <button onClick={toggleDropdown} className="border-2 border-background-300/50 py-2 px-4 rounded-xl outline-none w-45 text-text-100 font-bold shadow-md hover:bg-secondary-800"> Eureka Archives</button>
+            <button onClick={toggleDropdown} className="border-2 border-background-300/50 py-2 px-3 rounded-xl outline-none w-45 text-text-100 font-bold shadow-md hover:bg-secondary-800">  Archives</button>
             {isOpen && (
-              <div className="absolute mt-2  border-background-300/50 shadow-lg rounded-md py-2 w-45  ">
+              <div className="absolute mt-2 bg-background-900/70 drop-shadow-md backdrop-blur-[10px] shadow-lg rounded-xl py-2 w-45 px-3 mx-auto ">
                 <Link to="./Eureka1">
-                  <button className="block text-text-100 font-bold hover:bg-secondary-800 mx-auto">Eureka 1.0</button>
+                  <button className="block text-text-100 font-bold hover:bg-secondary-600 rounded-xl px-2 mx-auto">Eureka 1.0</button>
                 </Link>
-                <Link>
-                <button className="block text-text-100 font-bold hover:bg-secondary-800 mx-auto">Eureka 2.0</button>
+                <Link to="./Eureka2">
+                <button className="block text-text-100 font-bold hover:bg-secondary-600 rounded-lg px-2 mx-auto">Eureka 2.0</button>
+                </Link>
+                <Link to="./Eureka3">
+                <button className="block text-text-100 font-bold hover:bg-secondary-600 rounded-lg px-2 mx-auto">Eureka 3.0</button>
                 </Link>
               </div>
             )}

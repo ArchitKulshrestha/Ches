@@ -23,6 +23,15 @@ import ae from "./ae.webp";
 import af from "./af.webp";
 import ag from "./ag.webp";
 import heroimage from "./heroimage.png";
+import eurekab from "./eurekab.jpeg"
+import eurekac from "./eurekac.jpg"
+import eurekai from "./eurekac.jpg"
+import eurekaf from "./eurekaf.jpg"
+import eurekad from "./eurekad.jpeg"
+import eurekag from "./eurekad.jpeg"
+import eurekah from "./eurekad.jpeg"
+import eurekae from "./eurekae.jpeg"
+
 
 export {
   Eureka,
@@ -50,4 +59,14 @@ export {
   af,
   ag,
   heroimage,
+  eurekab,
+  eurekac,
+  eurekad,
+  eurekae,
+  eurekai,
+  eurekaf,
+  eurekag,
+  eurekah,
+  
+  
 };

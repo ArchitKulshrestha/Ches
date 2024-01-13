@@ -7,8 +7,9 @@ function Layout() {
     <>
     <div className="text-text-100 bg-background-950 font-OpenSans ">
           <NavBarE />
-          
+      
       <Outlet />
+    
       <FooterE />
       </div>
     </>
