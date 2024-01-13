@@ -23,6 +23,17 @@ import ad from "./ad.webp";
 import ae from "./ae.webp";
 import af from "./af.webp";
 import ag from "./ag.webp";
+import EurekaNav from "./EurekaNav.webp";
+
+import eurekab from "./eurekab.jpeg";
+import eurekac from "./eurekac.jpg";
+import eurekai from "./eurekac.jpg";
+import eurekaf from "./eurekaf.jpg";
+import eurekad from "./eurekad.jpeg";
+import eurekag from "./eurekad.jpeg";
+import eurekah from "./eurekad.jpeg";
+import eurekae from "./eurekae.jpeg";
+
 import teamImg from "./teamImg.webp";
 import Alchemylogo from "./Alchemylogo.webp";
 import K12logo from "./K12logo.webp";
@@ -56,6 +67,14 @@ export {
   ae,
   af,
   ag,
+  eurekab,
+  eurekac,
+  eurekad,
+  eurekae,
+  eurekai,
+  eurekaf,
+  eurekag,
+  eurekah,
   Alchemylogo,
   K12logo,
   SIPHONlogo,
@@ -65,4 +84,5 @@ export {
   Eurekalogo,
   teamImg,
   SRC,
+  EurekaNav,
 };
