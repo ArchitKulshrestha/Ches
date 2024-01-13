@@ -6,8 +6,8 @@ import { SectionWrapper } from "../hoc";
 
 function Developer() {
   return (
-    <>
-      <h2 className={"text-4xl font-semibold  mb-5"}>Developers</h2>
+    <section>
+      <h1 className={"text-4xl font-semibold  mb-5"}>Developers</h1>
 
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6  gap-4">
         {Developers.map((developer) => (
@@ -18,8 +18,8 @@ function Developer() {
             tiltMaxAngleY={10}
             transitionSpeed={1950}>
             <div className="w-full  rounded-[10px]  ">
-              <div className="w-[98%] sm:w-[180px] h-[100px]  hover:shadow-text-500/70 backdrop-blur-[10px] bg-background-900/70 rounded-[20px] text-[#f7ebfa]  p-4 hover:shadow-lg">
-                <div className=" font-semibold text-lg ">{developer.name}</div>
+              <div className="w-[96%] sm:w-[190px] min-h-[100px]  hover:shadow-text-500/70 backdrop-blur-[10px] bg-background-900/70 rounded-[20px] text-[#f7ebfa]  p-4 hover:shadow-lg">
+                <p className=" font-semibold text-lg ">{developer.name}</p>
 
                 <a
                   href={`${developer.Linkedin}`}
@@ -33,7 +33,7 @@ function Developer() {
           </Tilt>
         ))}
       </div>
-    </>
+    </section>
   );
 }
 

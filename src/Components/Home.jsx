@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import Typewriter from "typewriter-effect";
 import { SectionWrapper } from "../hoc";
-import { heroimage } from "../assets";
+
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 
@@ -14,9 +14,9 @@ function Home() {
             className="flex sm:flex-row flex-col gap-y-20"
             variants={fadeIn("right", "tween ", 0.3, 0.4)}>
             <div className="sm:w-[60%] w-full h-[150px]">
-              <h3 className="text-text-100  font-bold md:text-[75px] sm:text-[60px] text-[45px] font-OpenSans">
+              <h1 className="text-text-100  font-bold md:text-[75px] sm:text-[60px] text-[45px] font-OpenSans">
                 We Are
-              </h3>
+              </h1>
               <div className="mt-4 text-3xl  md:text-[2.8rem]">
                 <Typewriter
                   options={{
@@ -34,13 +34,6 @@ function Home() {
                   }}
                 />
               </div>
-            </div>
-            <div className="sm:w-[40%] w-full flex justify-center items-center">
-              <img
-                src={heroimage}
-                alt="Home-image"
-                className="sm:h-[30rem] h-[18rem] object-contain object-center "
-              />
             </div>
           </motion.div>
         </div>

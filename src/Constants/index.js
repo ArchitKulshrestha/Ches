@@ -15,6 +15,13 @@ import {
   ae,
   af,
   ag,
+  Alchemylogo,
+  SIPHONlogo,
+  Workshoplogo,
+  K12logo,
+  Eurekalogo,
+  car_logo,
+  SRClogo,
 } from "../assets";
 
 export const NavLinks = [
@@ -64,8 +71,9 @@ export const events = [
   {
     title: "Alchemy",
     content:
-      "Alchemy: Alchemy - The Manufacturing Quest: The event aims to upskill the manufacturing of products along with learning about the use, harm, and other technicalities involved during the process with the least possible cost. It involves two rounds; First, participants solve tricky riddles to follow a mysterious trail. Then, the adventure unfolds, capturing interest by hinting at the idea that turning regular metals into gold might just be possible.",
+      "Alchemy - The Manufacturing Quest: The event aims to upskill the manufacturing of products along with learning about the use, harm, and other technicalities involved during the process with the least possible cost. It involves two rounds; First, participants solve tricky riddles to follow a mysterious trail. Then, the adventure unfolds, capturing interest by hinting at the idea that turning regular metals into gold might just be possible.",
     img: Alchemy,
+    inside_img: Alchemylogo,
     link: "/",
   },
   {
@@ -73,6 +81,7 @@ export const events = [
     content:
       "Siphon is the AIChE Chemical Engineering Society's annual departmental festival at SVNIT. It strives to increase students' all-around knowledge, especially in the Domain of Chemical Engineering.Siphon is the flagship event of the Chemical Engineering Society.Various games like Chem-E-Fire ,Venom Hunt, goblet of fire are conduted along with the starch walk outside the department . ",
     img: SIPHON,
+    inside_img: SIPHONlogo,
     link: "/",
   },
   {
@@ -80,6 +89,7 @@ export const events = [
     content:
       "Workshops on software like DWSIM or Aspen are organized to get students acquainted with the simulation of flowsheets followed by a flowsheet designing competition to give them a hands-on experience.ChES organizes workshops ranging from career guidance to interactive sessions to motivate and bring the audience across the vast domain.",
     img: Workshop,
+    inside_img: Workshoplogo,
     link: "/",
   },
   {
@@ -87,6 +97,7 @@ export const events = [
     content:
       "AIChE's K-12 Outreach Program has the motive of promoting chemical engineering to K-12 students and planting a seed and nurturing them into future engineers.It emphasizes STEM learning and applying it in practical situations. With a focus on STEM (Science, Technology, Engineering, and Mathematics) education, the program aims to instill a passion for these fields by providing practical applications and real-world insights.",
     img: K12,
+    inside_img: K12logo,
     link: "/",
   },
   {
@@ -94,6 +105,7 @@ export const events = [
     content:
       "Spark your scientific curiosity and ignite your research passions with Eureka, the three-month research competition for second-year chemical engineering students. This helps the participants to explore cutting-edge fields like sustainable energy materials, biomanufacturing, or advanced separation technologies. This event brings in teamwork, guided by expert mentors who hone your research skills through five online portals. The journey concludes with a final presentation before professors who serve as judges, with the top three teams emerging as victors. ",
     img: uphoto,
+    inside_img: Eurekalogo,
     link: "/eureka",
   },
   {
@@ -101,6 +113,7 @@ export const events = [
     content:
       "One of the flagship and important technical events is Chem-E-Car. The goal of this competition is to create a shoebox-sized prototype car that uses chemical processes to start and stop. This contest tests the abilities of the participants to control the motion of the car by the sheer use of chemical reactions. The competition engages college students in designing a car powered by a chemical energy source, that will safely run a specific given distance and stop.",
     img: car,
+    inside_img: car_logo,
     link: "/",
   },
   {
@@ -108,6 +121,7 @@ export const events = [
     content:
       "The Student Regional Conference (SRC) is an annual three-day event organized by AIChE Global in fourteen regions worldwide. Through workshops and competitions, it encourages collaboration among AIChE chapters, providing Chemical Engineering students with opportunities to enhance skills, network with industry experts, and showcase talents. Winners can progress to the USA's Annual Student Conference (ASC).",
     img: K12,
+    inside_img: SRClogo,
     link: "https://www.synergiconsrc2023.com/",
   },
 ];
@@ -238,18 +252,18 @@ export const Teams = [
 export const Developers = [
   {
     id: 1,
-    name: "Archit",
+    name: "Archit ",
     Linkedin: "https://www.linkedin.com/in/archit-kulshrestha-1aa01a255/",
   },
   {
     id: 2,
-    name: "Aditya",
+    name: "Aditya ",
     Linkedin: "https://www.linkedin.com/in/adityak1911/",
   },
 
   {
     id: 3,
-    name: "Abhay",
+    name: "Abhay ",
     Linkedin: "https://www.linkedin.com/in/abhay-dubey-480a48264/",
   },
   {
@@ -259,7 +273,7 @@ export const Developers = [
   },
   {
     id: 5,
-    name: "Shikhar",
+    name: "Shikhar ",
     Linkedin: "https://www.linkedin.com/in/shikhar-shukla-011062256/",
   },
   {

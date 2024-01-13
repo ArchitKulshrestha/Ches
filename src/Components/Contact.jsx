@@ -27,8 +27,8 @@ function Contact() {
 
     emailjs
       .send(
-        "service_6p2qorf",
-        "template_xpmjy7j",
+        "service_ipyj85c",
+        "template_pzaln2s",
 
         {
           from_name: form.name,
@@ -37,12 +37,12 @@ function Contact() {
           to_email: "archit499kul@gmail.com",
           message: form.message,
         },
-        "hfiF5fVej3ITkNuKZ"
+        "s9ONT6lFbL_3bS2Vl"
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("Thank you. We will get back to you as soon as possible.");
 
           setForm({
             name: "",
@@ -61,10 +61,10 @@ function Contact() {
 
   return (
     <>
-      <div className=" flex xl:flex-row flex-col-reverse gap-10 overflow-hidden sm:w-[60%]">
+      <section className=" flex xl:flex-row flex-col-reverse gap-10 overflow-hidden sm:w-[60%]">
         <div className="flex-[0.75] bg-background-900/70 backdrop-blur-md py-4 p-2 sm:p-6 rounded-2xl">
           <p className={styles.sectionSubText}>Get in touch</p>
-          <h3 className={styles.sectionHeadText}>Contact.</h3>
+          <h1 className={styles.sectionHeadText}>Contact.</h1>
           <form
             ref={formRef}
             onSubmit={handleSubmit}
@@ -112,7 +112,7 @@ function Contact() {
             </button>
           </form>
         </div>
-      </div>
+      </section>
     </>
   );
 }

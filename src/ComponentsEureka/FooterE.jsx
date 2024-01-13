@@ -1,15 +1,15 @@
 const year = new Date().getFullYear();
-import { SVNITLOGO } from "../assets";
+import { ChesLogo } from "../assets";
 import { Developers } from "../Constants";
 
 const FooterE = () => {
   return (
     <footer className="flex flex-col  items-center justify-center  mt-[1rem] text-center text-text-200">
       <img
-        src={SVNITLOGO}
+        src={ChesLogo}
         alt="logo"
-        className="h-[5rem] w-[5rem] mt-[1rem] mb-[1.5rem]"></img>
-      <h2>AIChE ChES</h2>
+        className="h-[5rem]  mt-[1rem] mb-[1.5rem]"></img>
+
       <h2>Sardar Vallabhbhai National Institute of Technology, Surat</h2>
       <hr className=" border-accent-600 my-4 w-[95%] sm:w-[80%]" />
 
