@@ -23,6 +23,12 @@ function Footer() {
             className="text-text-300 hover:text-accent-400 mt-2">
             ches@svnit.ac.in
           </a>
+          <a
+            href="mailto:ches.svnit@gmail.com"
+            aria-label="mail"
+            className="text-text-300 hover:text-accent-400 mt-2">
+            ches.svnit@gmail.com
+          </a>
         </div>
         <div className="flex flex-col ">
           <img
