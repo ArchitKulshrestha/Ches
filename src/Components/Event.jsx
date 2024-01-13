@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 //import { ChesLogo } from "../assets";
 import { events } from "../Constants";
 
-const EventCard = ({ content, title, img, inside_img, index, link }) => {
+const EventCard = ({ content, img, inside_img, index, link }) => {
   return (
     <>
       <Tilt
@@ -35,7 +35,7 @@ const EventCard = ({ content, title, img, inside_img, index, link }) => {
         <div className="modal-box">
           <div className="flex md:flex-row flex-col gap-x-8 gap-y-2 justify-between">
             <img
-              className="md:h-[25rem] rounded-xl h-[18rem]"
+              className="md:h-[25rem] aspect-square rounded-xl h-[18rem]"
               alt="Event Image"
               src={img}
             />

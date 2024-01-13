@@ -8,10 +8,11 @@ import Sundar from "./sundar.webp";
 import Eureka from "./Eureka.webp";
 import aiche_logo from "./aiche_logo.webp";
 import SIPHON from "./SIPHON.webp";
+import SRC from "./SRC.webp";
 import Workshop from "./Workshop.webp";
 import K12 from "./K12.webp";
-import uphoto from "./uphoto.webp";
-import car from "./car.webp";
+import uphoto from "./Eureka.webp";
+import car from "./Chem-E-Car.webp";
 import dhyey from "./dhyey.webp";
 import Alchemy from "./Alchemy.webp";
 import EurekaHome from "./Home-image.webp";
@@ -63,4 +64,5 @@ export {
   SRClogo,
   Eurekalogo,
   teamImg,
+  SRC,
 };
