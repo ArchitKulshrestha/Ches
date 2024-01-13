@@ -55,7 +55,7 @@ function About() {
         scale={1.01}
         tiltMaxAngleY={1}
         transitionSpeed={1950}>
-        <div className="sm:w-[85%] w-full mx-auto mt-12">
+        <div className="sm:w-[85%] w-full mx-auto mt-20">
           <Slider className="overflow-hidden" {...settings}>
             {slides.map((slide) => (
               <AboutCard {...slide} />
